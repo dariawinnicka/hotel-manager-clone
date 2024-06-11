@@ -1,0 +1,105 @@
+/* --------------------------------- WEBSITE --------------------------------- */
+
+/* --------------------------------- NAVIGATION --------------------------------- */
+
+/* navigation-bar */
+nav {
+  margin: 16px auto 0 auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: transparent;
+  width: 1177px;
+  height: 40px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+/* navigation-logo */
+.logo-full,
+.logo-icon {
+  height: 100%;
+  width: auto;
+  margin: left;
+}
+
+.hotel-manager {
+  position: relative;
+  bottom: 13px;
+  left: 7px;
+  font-size: 20px;
+  font-weight: 599;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* navigation-buttons */
+.navigation-buttons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.navigation-buttons a {
+  margin-left: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.company {
+  background-color: transparent;
+  border-radius: 14px;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.fa-twitter,
+.fa-linkedin {
+  background-color: transparent;
+  border-radius: 14px;
+  padding: 12px 15px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.fa-linkedin {
+  margin-right: 6px;
+}
+
+.company:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover {
+  background-color: #f1f3f7;
+}
+
+.gg-key {
+  right: -30px;
+  color: #1c73e8;
+}
+
+.log-in {
+  background-color: transparent;
+  border-radius: 14px;
+  padding: 12px 20px;
+  text-decoration: none;
+  text-indent: 20px;
+  color: #1c73e8;
+}
+
+.log-in:hover {
+  background-color: #eef4fe;
+}
+
+.demo {
+  background-color: #000000;
+  border-radius: 14px;
+  padding: 12px 21px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* --------------------------------- BODY --------------------------------- */
