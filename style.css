@@ -6,8 +6,8 @@
 nav {
   margin: 16px auto 0 auto;
   display: flex;
-  align-items: center;
-  overflow: hidden;
+  /* align-items: center; */
+  /* overflow: hidden; */
   background-color: transparent;
   width: 1177px;
   height: 40px;
@@ -16,7 +16,7 @@ nav {
 }
 
 /* navigation-logo */
-.logo-full,
+.logo,
 .logo-icon {
   height: 100%;
   width: auto;
@@ -103,3 +103,38 @@ nav {
 }
 
 /* --------------------------------- BODY --------------------------------- */
+
+/* body-introduction */
+.header {
+  text-align: center;
+  background-color: transparent;
+  font-family: Arial, sans-serif;
+  position: relative;
+  bottom: -100px;
+}
+
+.header-heading {
+  font-size: 65px;
+}
+
+.header-heading::before {
+  float: right;
+  width: calc(100% - 3.6em);
+  height: 1em;
+  content: "";
+}
+
+.header-heading::after {
+  content: "\A";
+  white-space: pre;
+  display: block;
+}
+
+.header-demo {
+  background-color: #000000;
+  border-radius: 14px;
+  padding: 12px 21px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+}

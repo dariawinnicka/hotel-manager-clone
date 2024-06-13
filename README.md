@@ -12,7 +12,10 @@ Currently, this project includes:
 
 Currently, this project includes:
 
-- **Frontend**: HTML and CSS.
+- **HTML**: For the structure and layout of the web page.
+- **CSS**: For styling and making the application visually appealing.
+- **Font Awesome**: For incorporating stylish social media icons.
+- **CSS.gg**: For additional high-quality icons.
 
 ## Connect
 
