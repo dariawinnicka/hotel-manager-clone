@@ -6,8 +6,6 @@
 nav {
   margin: 16px auto 0 auto;
   display: flex;
-  /* align-items: center; */
-  /* overflow: hidden; */
   background-color: transparent;
   width: 1177px;
   height: 40px;
@@ -106,35 +104,50 @@ nav {
 
 /* body-introduction */
 .header {
+  position: relative;
   text-align: center;
   background-color: transparent;
   font-family: Arial, sans-serif;
-  position: relative;
-  bottom: -100px;
+  bottom: -50px;
 }
 
 .header-heading {
   font-size: 65px;
+  letter-spacing: -1px;
+  margin-bottom: 0px;
 }
 
-.header-heading::before {
-  float: right;
-  width: calc(100% - 3.6em);
-  height: 1em;
-  content: "";
+.header-description {
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 28px;
 }
 
-.header-heading::after {
-  content: "\A";
-  white-space: pre;
-  display: block;
+/* navigation-button */
+.gg-bolt {
 }
 
 .header-demo {
+}
+
+/* 
+.header-demo {
+  display: center;
   background-color: #000000;
   border-radius: 14px;
-  padding: 12px 21px;
+  padding: 13px 25.5px;
   text-decoration: none;
-  font-size: 18px;
+  text-indent: 15px;
+  font-size: 17px;
   color: #ffffff;
+  display: inline-block;
+  margin-top: 10px;
+} 
+  
+.gg-bolt {
+  color: #807f7f;
+  top: 42px;
+  left: 685px;
 }
+
+*/
