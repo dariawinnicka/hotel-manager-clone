@@ -4,88 +4,86 @@
 
 /* navigation-bar */
 nav {
-  margin: 16px auto 0 auto;
-  display: flex;
   background-color: transparent;
-  width: 1177px;
-  height: 40px;
-  font-size: 15px;
+  display: flex;
   font-family: Arial, sans-serif;
+  font-size: 15px;
+  height: 40px;
+  margin: 16px auto 0 auto;
+  width: 1177px;
 }
 
 /* navigation-logo */
 .logo,
 .logo-icon {
   height: 100%;
-  width: auto;
   margin: left;
+  width: auto;
 }
 
 .hotel-manager {
-  position: relative;
   bottom: 13px;
-  left: 7px;
+  color: #000000;
   font-size: 20px;
   font-weight: 599;
+  left: 7px;
   letter-spacing: 1px;
+  position: relative;
   text-decoration: none;
-  color: #000000;
 }
 
 /* navigation-buttons */
 .navigation-buttons {
-  display: flex;
   align-items: center;
+  display: flex;
+  margin-left: auto;
   text-align: center;
   text-decoration: none;
-  margin-left: auto;
 }
 
 .navigation-buttons a {
-  margin-left: 5px;
-  display: inline-flex;
   align-items: center;
+  display: inline-flex;
+  margin-left: 5px;
+}
+
+.company,
+.fa-linkedin,
+.fa-twitter {
+  background-color: transparent;
+  border-radius: 14px;
+  color: #000000;
+  padding: 12px;
+  text-decoration: none;
 }
 
 .company {
-  background-color: transparent;
-  border-radius: 14px;
   padding: 12px 18px;
-  text-decoration: none;
-  color: #000000;
-}
-
-.fa-twitter,
-.fa-linkedin {
-  background-color: transparent;
-  border-radius: 14px;
-  padding: 12px 15px;
-  text-decoration: none;
-  color: #000000;
 }
 
 .fa-linkedin {
   margin-right: 6px;
+  padding: 12px 15px;
 }
 
 .company:hover,
-.fa-twitter:hover,
-.fa-linkedin:hover {
+.fa-linkedin:hover,
+.fa-twitter:hover {
   background-color: #f1f3f7;
 }
 
 .gg-key {
-  right: -30px;
   color: #1c73e8;
+  right: -30px;
 }
 
 .log-in {
   background-color: transparent;
   border-radius: 14px;
+  color: #1c73e8;
   padding: 12px 20px;
   text-decoration: none;
   text-indent: 20px;
-  color: #1c73e8;
 }
 
 .log-in:hover {
@@ -95,26 +93,26 @@ nav {
 .demo {
   background-color: #000000;
   border-radius: 14px;
+  color: #ffffff;
   padding: 12px 21px;
   text-decoration: none;
-  color: #ffffff;
 }
 
 /* --------------------------------- BODY --------------------------------- */
 
 /* body-introduction */
 .header {
+  background-color: transparent;
+  bottom: -50px;
+  font-family: Arial, sans-serif;
   position: relative;
   text-align: center;
-  background-color: transparent;
-  font-family: Arial, sans-serif;
-  bottom: -50px;
 }
 
 .header-heading {
   font-size: 65px;
   letter-spacing: -1px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .header-description {
@@ -125,29 +123,16 @@ nav {
 
 /* navigation-button */
 .gg-bolt {
+  color: #807f7f;
+  left: 684px;
+  top: 21px;
 }
 
 .header-demo {
-}
-
-/* 
-.header-demo {
-  display: center;
   background-color: #000000;
   border-radius: 14px;
-  padding: 13px 25.5px;
-  text-decoration: none;
-  text-indent: 15px;
-  font-size: 17px;
   color: #ffffff;
-  display: inline-block;
-  margin-top: 10px;
-} 
-  
-.gg-bolt {
-  color: #807f7f;
-  top: 42px;
-  left: 685px;
+  font-size: 17px;
+  padding: 13.5px 25.5px 14px 41.5px;
+  text-decoration: none;
 }
-
-*/
