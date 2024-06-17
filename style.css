@@ -122,10 +122,17 @@ nav {
 }
 
 /* navigation-button */
-.gg-bolt {
+.header-button {
+  padding-top: 28px;
+}
+
+/* icon-bolt */
+#google-bolt {
   color: #807f7f;
-  left: 684px;
-  top: 21px;
+  display: center;
+  font-size: 20px;
+  position: absolute;
+  right: 797px;
 }
 
 .header-demo {
@@ -133,6 +140,43 @@ nav {
   border-radius: 14px;
   color: #ffffff;
   font-size: 17px;
-  padding: 13.5px 25.5px 14px 41.5px;
+  padding: 14px 19px 14px 45px;
   text-decoration: none;
+}
+
+/* separator */
+.header-line {
+  border: 0.1px solid #e5e5e5;
+  position: relative;
+  top: 40px;
+  width: 80%;
+  margin-bottom: 70px; /* 5% */
+}
+
+/* body-sub-introduction */
+.sub-header {
+  display: flex;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  justify-content: center;
+}
+
+.sub-header-heading {
+  font-weight: 599;
+}
+
+.sub-header-description {
+  color: #6d7787;
+}
+
+/* icon-check-circle */
+#google-check-circle {
+  color: #959ca7;
+  font-size: 215%;
+  font-weight: 350;
+}
+
+.section-two {
+  margin: 0% 5%;
 }
