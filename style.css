@@ -10,7 +10,7 @@ nav {
   font-size: 15px;
   height: 40px;
   margin: 16px auto 0 auto;
-  width: 1177px;
+  width: 75%;
 }
 
 /* navigation-logo */
@@ -132,7 +132,7 @@ nav {
   display: center;
   font-size: 20px;
   position: absolute;
-  right: 797px;
+  right: 797px; /* 53.25%; */
 }
 
 .header-demo {
@@ -150,7 +150,7 @@ nav {
   position: relative;
   top: 40px;
   width: 80%;
-  margin-bottom: 70px; /* 5% */
+  margin-bottom: 4.7%;
 }
 
 /* body-sub-introduction */
@@ -168,15 +168,21 @@ nav {
 
 .sub-header-description {
   color: #6d7787;
+  margin: 0%;
 }
 
 /* icon-check-circle */
 #google-check-circle {
   color: #959ca7;
-  font-size: 215%;
+  font-size: 200%;
   font-weight: 350;
+  margin: 0% 0% 4.7% 0%;
 }
 
 .section-two {
   margin: 0% 5%;
+}
+
+.sub-header-heading {
+  margin: 5% 0% 3% 0%;
 }
