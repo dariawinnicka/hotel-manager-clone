@@ -1,5 +1,3 @@
-/* --------------------------------- WEBSITE --------------------------------- */
-
 /* --------------------------------- NAVIGATION --------------------------------- */
 
 /* navigation-bar */
@@ -14,14 +12,16 @@ nav {
 }
 
 /* navigation-logo */
+/* navigation-company-logo */
 .logo,
-.logo-icon {
+.company-logo {
   height: 100%;
   margin: left;
   width: auto;
 }
 
-.hotel-manager {
+/* navigation-company-title */
+.company-title {
   bottom: 13px;
   color: #000000;
   font-size: 20px;
@@ -41,12 +41,17 @@ nav {
   text-decoration: none;
 }
 
+/* navigation-icon-twitter */
+/* navigation-icon-linkedin */
 .navigation-buttons a {
   align-items: center;
   display: inline-flex;
   margin-left: 5px;
 }
 
+/* navigation-button-company */
+/* navigation-icon-linkedin */
+/* navigation-icon-twitter */
 .company,
 .fa-linkedin,
 .fa-twitter {
@@ -57,26 +62,33 @@ nav {
   text-decoration: none;
 }
 
+/* navigation-button-company */
 .company {
   padding: 12px 18px;
 }
 
+/* navigation-icon-linkedin */
 .fa-linkedin {
   margin-right: 6px;
   padding: 12px 15px;
 }
 
+/* navigation-button-company-hover */
+/* navigation-icon-linkedin-hover */
+/* navigation-icon-twitter-hover */
 .company:hover,
 .fa-linkedin:hover,
 .fa-twitter:hover {
   background-color: #f1f3f7;
 }
 
+/* navigation-icon-key */
 .gg-key {
   color: #1c73e8;
   right: -30px;
 }
 
+/* navigation-button-log-in */
 .log-in {
   background-color: transparent;
   border-radius: 14px;
@@ -86,10 +98,12 @@ nav {
   text-indent: 20px;
 }
 
+/* navigation-button-log-in-hover */
 .log-in:hover {
   background-color: #eef4fe;
 }
 
+/* navigation-button-demo */
 .demo {
   background-color: #000000;
   border-radius: 14px;
@@ -98,9 +112,9 @@ nav {
   text-decoration: none;
 }
 
-/* --------------------------------- BODY --------------------------------- */
+/* --------------------------------- HEADER --------------------------------- */
 
-/* body-introduction */
+/* header */
 .header {
   background-color: transparent;
   bottom: -50px;
@@ -109,24 +123,26 @@ nav {
   text-align: center;
 }
 
+/* header-heading */
 .header-heading {
   font-size: 65px;
   letter-spacing: -1px;
   margin-bottom: 0;
 }
 
+/* header-description */
 .header-description {
   font-size: 21px;
   letter-spacing: 1px;
   line-height: 28px;
 }
 
-/* navigation-button */
+/* header-button */
 .header-button {
   padding-top: 28px;
 }
 
-/* icon-bolt */
+/* header-icon-bolt */
 #google-bolt {
   color: #807f7f;
   display: center;
@@ -135,6 +151,7 @@ nav {
   right: 797px; /* 53.25%; */
 }
 
+/* header-button-book-a-demo */
 .header-demo {
   background-color: #000000;
   border-radius: 14px;
@@ -144,7 +161,7 @@ nav {
   text-decoration: none;
 }
 
-/* separator */
+/* header-separator */
 .header-line {
   border: 0.1px solid #e5e5e5;
   position: relative;
@@ -153,7 +170,7 @@ nav {
   margin-bottom: 4.7%;
 }
 
-/* body-sub-introduction */
+/* sub-header */
 .sub-header {
   display: flex;
   font-family: Arial, sans-serif;
@@ -162,16 +179,14 @@ nav {
   justify-content: center;
 }
 
-.sub-header-heading {
-  font-weight: 599;
+/* sub-header-section-two */
+.section-two {
+  margin: 0% 5%;
 }
 
-.sub-header-description {
-  color: #6d7787;
-  margin: 0%;
-}
-
-/* icon-check-circle */
+/* sub-header-section-one-icon-check-circle */
+/* sub-header-section-two-icon-check-circle */
+/* sub-header-section-three-icon-check-circle */
 #google-check-circle {
   color: #959ca7;
   font-size: 200%;
@@ -179,10 +194,20 @@ nav {
   margin: 0% 0% 4.7% 0%;
 }
 
-.section-two {
-  margin: 0% 5%;
-}
-
+/* sub-header-section-one-heading */
+/* sub-header-section-two-heading */
+/* sub-header-section-three-heading */
 .sub-header-heading {
+  font-weight: 599;
   margin: 5% 0% 3% 0%;
 }
+
+/* sub-header-section-one-description */
+/* sub-header-section-two-description */
+/* sub-header-section-three-description */
+.sub-header-description {
+  color: #6d7787;
+  margin: 0%;
+}
+
+/* --------------------------------- BODY --------------------------------- */
