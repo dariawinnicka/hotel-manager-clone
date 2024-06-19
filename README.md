@@ -6,8 +6,10 @@ This repository contains a clone of the [Hotel Manager](http://www.hotelmanager.
 
 Currently, this project includes:
 
-- **Navigation Bar**: A responsive navigation bar featuring the Hotel Manager logo, buttons for "Company", "Log in", and "Demo", and icons like social media links for easy access to key website sections.
-- **Header**: An introductory section with a large heading introducing the Hotel Manager platform, a description highlighting its integrated tools for hotel management, and a prominent "Book a demo" button for immediate engagement.
+- **Navigation Bar**: The navigation bar exemplifies responsiveness with integrated Hotel Manager branding and essential links to company functions like "Company", "Log in", and "Demo". It also prominently features social media icons for seamless user engagement.
+- **Header**: Positioned at the forefront, the header section introduces the Hotel Manager platform with a bold visual hierarchy, emphasizing its comprehensive suite of integrated tools designed to optimize modern hotel management. A prominent "Book a demo" call-to-action invites immediate exploration.
+- **Sub Header**: Highlighting its integrated functionality, the sub-header underscores the platform's capability to tailor solutions for hotel operations. It emphasises tools aimed at enhancing operational efficiency and guest satisfaction.
+- **Body**: Featuring dynamic scroll-based animations, the body section vividly showcases the software and website interfaces, effectively captivating users.
 
 ## Technologies
 
