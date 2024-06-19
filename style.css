@@ -12,20 +12,18 @@ nav {
   background-color: #ffffff;
   display: flex;
   font-size: 15px;
-  /* -------------- ADD WHITESPACE TOP & BOTTOM: 60-80px - RE-SIZE LOGO - MAkE WIDER --------------- */
-  height: 40px;
-  margin: 16px auto 0px auto;
+  height: 70px;
+  margin: -10px auto;
   position: sticky;
   top: 0px;
-  width: 75%;
+  width: 80%;
   z-index: 1000;
 }
 
-/* navigation-logo */
 /* navigation-company-logo */
-.logo,
 .company-logo {
-  height: 100%;
+  height: 57%;
+  margin-top: 8%;
   margin: left;
   width: auto;
 }
@@ -167,13 +165,12 @@ nav {
   text-decoration: none;
 }
 
-/* -------------- MAkE WIDER? --------------- */
 /* header-separator */
 .header-line {
   border: 0.1px solid #e5e5e5;
   position: relative;
   top: 40px;
-  width: 75%;
+  width: 80%;
   margin-bottom: 4.7%;
 }
 
@@ -234,8 +231,6 @@ body {
   height: 200vh;
 }
 
-/* -------------- MAkE WIDER + RENAME? --------------- */
-
 /* body-image-software */
 .image-software {
   position: relative;
@@ -243,7 +238,7 @@ body {
 
 /* body-image-software-website */
 .image-software-website {
-  width: 75%;
+  width: 80%;
   display: block;
   margin: 8% auto;
   transform: perspective(600px) rotateX(20deg);
@@ -253,7 +248,7 @@ body {
 /* body-image-software-application */
 .image-software-application {
   position: absolute;
-  right: 14%;
+  right: 12%;
   bottom: -10%;
   width: 20%;
   transform: perspective(600px) rotateX(20deg);
