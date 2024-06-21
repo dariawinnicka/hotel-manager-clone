@@ -5,7 +5,6 @@
 
 // Retrieved the DOM element representing the "image-software-website".
 const websiteImage = document.querySelector(".image-software-website");
-
 // Retrieved the DOM element representing the "image-software-application".
 const applicationImage = document.querySelector(".image-software-application");
 
@@ -16,10 +15,8 @@ let previousScrollPosition = 0;
 window.addEventListener("scroll", function () {
   // Retrieved the current scroll position of the window.
   const currentScrollPosition = window.scrollY;
-
   // Retrieved the height of the viewport.
   const viewportHeight = window.innerHeight;
-
   // Retrieved the total height of the document.
   const documentHeight = document.documentElement.scrollHeight;
 
@@ -47,7 +44,10 @@ window.addEventListener("scroll", function () {
 
   // Applied the slide transformation to the "image-software-application".
   applicationImage.style.transform = `translateX(-${slideDistance}px)`; // Applied the slide transformation.
-
   // Updated the previous scroll position for reference in the next scroll event.
   previousScrollPosition = currentScrollPosition;
 });
+
+// SLIDE UP ON SCROLL - 3 INSTRUCTIONS PICS
+
+//

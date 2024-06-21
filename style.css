@@ -7,6 +7,12 @@ html {
 
 /* --------------------------------- NAVIGATION --------------------------------- */
 
+/* 
+ACTION:-
+Consistent Units:
+Ensure consistent use of units (e.g., use px or % consistently).
+*/
+
 /* navigation-bar */
 nav {
   background-color: #ffffff;
@@ -253,4 +259,69 @@ body {
   width: 20%;
   transform: perspective(600px) rotateX(20deg);
   transition: transform 0.1s ease-out;
+}
+
+/* instruction */
+.instruction {
+  background-color: transparent;
+  margin: 23% auto 5.5% auto;
+  letter-spacing: -1px;
+  line-height: 25px;
+  position: relative;
+  text-align: center;
+}
+
+/* instruction-title */
+.instruction-title {
+  font-size: 55px;
+}
+
+/* instruction-sub-title */
+.instruction-sub-title {
+  font-size: 55px;
+  color: #b2b2b2;
+}
+
+/* body-image-instruction */
+.image-instruction {
+  display: flex;
+  justify-content: center;
+  height: 24%;
+  width: auto;
+}
+
+/* 
+ACTION:-
+Zoom:
+Magnify the image within the frame without altering the frame's dimensions.
+*/
+
+/* body-image-instruction-start */
+/* body-image-instruction-launch */
+/* body-image-instruction-manage */
+.image-instruction-start,
+.image-instruction-launch,
+.image-instruction-manage {
+  border-radius: 25px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 0 24px;
+  width: 24%;
+  height: auto;
+  padding-top: 2%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* body-image-instruction-launch */
+.image-instruction-launch {
+  margin: 0px 50px;
+}
+
+/* body-image-instruction-start-hover */
+/* body-image-instruction-launch-hover */
+/* body-image-instruction-manage-hover */
+.image-instruction-start:hover,
+.image-instruction-launch:hover,
+.image-instruction-manage:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
 }
