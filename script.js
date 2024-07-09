@@ -1,12 +1,9 @@
 // --------------------------------- BODY ---------------------------------
 
-// body-image-software-website
-// body-image-software-application
-
 // Retrieved the DOM element representing the "image-software-website".
-const websiteImage = document.querySelector(".image-software-website");
+const websiteImage = document.querySelector(".img-software-web");
 // Retrieved the DOM element representing the "image-software-application".
-const applicationImage = document.querySelector(".image-software-application");
+const applicationImage = document.querySelector(".img-software-app");
 
 // Initialised a variable to store the previous scroll position.
 let previousScrollPosition = 0;
@@ -34,6 +31,7 @@ window.addEventListener("scroll", function () {
     1
   ); // Calculated the percentage of visibility.
   const websiteImageTiltAngle = 20 - 20 * websiteImageVisibilityPercent; // Calculated the tilt angle based on visibility.
+
   websiteImage.style.transform = `perspective(600px) rotateX(${websiteImageTiltAngle}deg)`; // Applied the tilt transformation.
 
   // Calculated the slide effect for the "image-software-application" based on the scroll position.
@@ -47,7 +45,3 @@ window.addEventListener("scroll", function () {
   // Updated the previous scroll position for reference in the next scroll event.
   previousScrollPosition = currentScrollPosition;
 });
-
-// SLIDE UP ON SCROLL - 3 INSTRUCTIONS PICS
-
-//
