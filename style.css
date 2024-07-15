@@ -1,3 +1,9 @@
+/* 
+ACTION:-
+Efficiency:
+Streamline and structure the code effectively.
+*/
+
 /* --------------------------------- HTML --------------------------------- */
 
 html {
@@ -217,6 +223,8 @@ nav {
   transition: transform 0.1s ease-out;
 }
 
+/* ---------- SECTION 2 ---------- */
+
 .section-2 {
   margin: 22% auto 0% auto;
 }
@@ -259,9 +267,13 @@ nav {
 }
 
 .text-grid-trio {
+  text-align: center;
+}
+
+.text-grid-trio,
+.text-grid-duo {
   display: flex;
   justify-content: center;
-  text-align: center;
 }
 
 .text-grid-trio-start,
@@ -277,14 +289,14 @@ nav {
 .text-grid-trio-title {
   font-size: 35px;
   font-weight: bold;
-  margin: 25px auto;
+  margin: 30px 0px 20px 0px;
 }
 
-.text-grid-trio-description {
+.text-grid-trio-description,
+.sign-up-description {
   color: #807f7f;
   font-size: 17px;
   letter-spacing: 0.5px;
-  margin: 0px;
 }
 
 sup {
@@ -295,8 +307,200 @@ sup {
   top: 5px;
 }
 
-/* ---------- SECTION 2 ---------- */
+/* ---------- SECTION 3 ---------- */
 
 .section-3 {
-  margin-top: 165px; /* ADD section-4 + sign-up HERE */
+  margin-top: 165px; /* margin size - bottom? */
 }
+
+.img-grid-duo {
+  display: flex;
+  justify-content: center;
+}
+
+.img-grid-duo img {
+  border-radius: 25px;
+  height: 535px;
+  margin: 0px 15px;
+  width: 580px;
+}
+
+.text-grid-duo {
+  color: #ffffff;
+  text-align: left;
+  top: -530px; /* button? */
+  position: relative;
+}
+
+.text-grid-duo-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.text-grid-duo-description {
+  font-size: 17px;
+}
+
+.text-grid-duo-operation,
+.text-grid-duo-guests {
+  left: -85px;
+  position: relative;
+}
+
+.text-grid-duo-knowledge,
+.text-grid-duo-contactless {
+  left: 40px;
+  position: relative;
+}
+
+.demo-operation,
+.demo-knowledge,
+.demo-guests,
+.demo-contactless {
+  background-color: #000000;
+  bottom: -265px;
+  border-radius: 14px;
+  color: #ffffff;
+  padding: 12px 21px;
+  position: relative;
+  text-decoration: none;
+}
+
+/* ---------- SECTION 4 ---------- */
+
+.section-4 {
+  margin-top: -110px; /* margin? */
+}
+
+.text-grid-duo-contactless {
+  left: 60px;
+  position: relative;
+}
+
+.demo-contactless {
+  top: 245px;
+  position: relative;
+}
+
+/* ---------- SECTION 5 ---------- */
+
+.sign-up {
+  border-radius: 25px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 0 24px;
+  margin: -110px 150px 0px 150px;
+  padding: 50px 0px;
+  position: relative;
+  text-align: center;
+}
+
+.sign-up-title {
+  font-weight: bold;
+  font-size: 55px;
+  letter-spacing: -1px;
+  margin: 15px auto 0px auto;
+}
+
+.sign-up-description {
+  margin: 20px 0px 40px 0px;
+}
+
+#google-bolt {
+  color: #807f7f;
+  display: center;
+  font-size: 20px;
+  position: absolute;
+  right: 53.25%;
+}
+
+.body-demo {
+  background-color: #000000;
+  border-radius: 14px;
+  color: #ffffff;
+  font-size: 17px;
+  /* extend? */
+  padding: 14px 19px 14px 45px;
+  /* padding: 14px 500px; */
+  text-decoration: none;
+}
+
+/* --------------------------------- FOOTER --------------------------------- */
+
+footer {
+  margin: 250px 150px;
+}
+
+.footer-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0px 20px 0px;
+}
+
+.footer-description {
+  color: #b2b9c5;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 40px 0px 25px 0px;
+}
+
+.nav-footer {
+  color: #d5dae0;
+  display: block;
+  font-size: 18px;
+  margin: 15px 0px;
+  text-decoration: none;
+}
+
+.footer-line {
+  border: 0.1px solid #e5e5e5;
+  position: relative;
+  top: 40px;
+  width: 100%;
+  margin-bottom: 4.7%;
+}
+
+.footer-sub-heading {
+  display: flex;
+}
+
+.footer-sub-title {
+  color: #d5dae0;
+  font-size: 14px;
+  margin: 0;
+}
+
+.nav-sub-footer {
+  color: #d5dae0;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#privacy {
+  padding-left: 361px;
+}
+
+#terms {
+  padding-left: 30px;
+}
+
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+
+/* 
+ACTION:-
+Zoom:
+Magnify the image within the frame without altering the frame's dimensions.
+*/
+
+/*
+.image-instruction-start:hover,
+.image-instruction-launch:hover,
+.image-instruction-manage:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+*/
