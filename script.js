@@ -1,3 +1,7 @@
+// ACTION:
+// Verify.
+// Efficiency.
+
 // --------------------------------- BODY ---------------------------------
 
 // Retrieved the DOM element representing the "image-software-website".

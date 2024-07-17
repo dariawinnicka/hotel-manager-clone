@@ -1,9 +1,3 @@
-<!-- 
-ACTION:-
-Efficiency:
-Streamline and structure the code effectively.
--->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,6 +30,13 @@ Streamline and structure the code effectively.
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <!-- preconnect https://fonts.google.com/specimen/DM+Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" />
+
     <!-- connect-css -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -43,27 +44,29 @@ Streamline and structure the code effectively.
   <!-- --------------------------------- NAVIGATION --------------------------------- -->
 
   <nav>
-    <div class="logo">
+    <div class="nav-logo">
       <img
-        class="company-logo"
+        class="nav-company-logo"
         src="image/65292600bddf8430fb98972d_Hotel Manager Logomark.png"
         alt="image" />
-      <a href="#" class="company-title">Hotel Manager</a>
+      <a href="#" class="nav-company-title">Hotel Manager</a>
     </div>
 
-    <div class="nav-buttons">
-      <a href="#" class="company">Company</a>
+    <div class="nav-btn">
+      <a href="#" class="btn-company">Company</a>
       <a
         href="https://x.com/HotelManagerHQ"
         target="_blank"
-        class="fa fa-twitter"></a>
+        class="fa fa-twitter"
+        id="btn-twitter"></a>
       <a
         href="https://www.linkedin.com/company/hotelmanagerco/"
         target="_blank"
-        class="fa fa-linkedin"></a>
-      <i href="#" class="gg-key"></i>
-      <a href="#" class="log-in">Log in</a>
-      <a href="#" class="demo">Demo</a>
+        class="fa fa-linkedin"
+        id="btn-linkedin"></a>
+      <i href="#" class="gg-key" id="btn-key"></i>
+      <a href="#" class="btn-log-in">Log in</a>
+      <a href="#" class="btn-demo">Demo</a>
     </div>
   </nav>
 
@@ -79,14 +82,15 @@ Streamline and structure the code effectively.
         Hotel Manager powers future-ready hotels with a fully integrated <br />
         suite of tools. Designed to drive revenue and efficiency.
       </p>
-      <div class="header-button">
+      <div class="header-btn-bolt">
         <i class="material-icons" id="google-bolt">bolt</i>
-        <a href="#" class="header-demo">Book a demo</a>
+        <a href="#" class="btn-demo-bolt">Book a demo</a>
       </div>
 
-      <hr class="header-line" />
+      <hr class="line" />
 
       <div class="sub-header">
+        <!-- 1 -->
         <div class="sub-header-grid-platform">
           <i class="material-symbols-outlined" id="google-check-circle">
             check_circle
@@ -98,7 +102,7 @@ Streamline and structure the code effectively.
             departments
           </p>
         </div>
-
+        <!-- 2 -->
         <div class="sub-header-grid-solution">
           <i class="material-symbols-outlined" id="google-check-circle">
             check_circle
@@ -110,7 +114,7 @@ Streamline and structure the code effectively.
             as you want
           </p>
         </div>
-
+        <!-- 3 -->
         <div class="sub-header-grid-intuitive">
           <i class="material-symbols-outlined" id="google-check-circle">
             check_circle
@@ -127,6 +131,7 @@ Streamline and structure the code effectively.
   </header>
 
   <!-- --------------------------------- BODY --------------------------------- -->
+
   <body>
     <div class="section-1">
       <div class="animation">
@@ -139,10 +144,7 @@ Streamline and structure the code effectively.
           src="image/614734b6db71042d7e4b47dd_Glass App-p-500.png"
           alt="image" />
       </div>
-      <!-- -->
-      <!-- -->
-      <!-- -->
-      <!-- -->
+
       <div class="section-2">
         <div class="subject">
           <h1 class="title">Go live in days, not months.</h1>
@@ -162,6 +164,7 @@ Streamline and structure the code effectively.
             src="image/6148c59d61f74a7c5a362b43_Manage.png"
             alt="image" />
         </div>
+        <!-- 1 -->
         <div class="text-grid-trio">
           <div class="text-grid-trio-start">
             <p class="text-grid-trio-title"><sup>1</sup>Start</p>
@@ -169,6 +172,7 @@ Streamline and structure the code effectively.
               From the Dashboard, set up and <br />customise for your hotel
             </p>
           </div>
+          <!-- 2 -->
           <div class="text-grid-trio-launch">
             <p class="text-grid-trio-title"><sup>2</sup>Launch</p>
             <p class="text-grid-trio-description">
@@ -176,6 +180,7 @@ Streamline and structure the code effectively.
               and Android
             </p>
           </div>
+          <!-- 3 -->
           <div class="text-grid-trio-manage">
             <p class="text-grid-trio-title"><sup>3</sup>Manage</p>
             <p class="text-grid-trio-description">
@@ -185,10 +190,7 @@ Streamline and structure the code effectively.
         </div>
       </div>
     </div>
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
+
     <div class="section-3">
       <div class="subject">
         <h1 class="title">Engage at scale.</h1>
@@ -197,15 +199,18 @@ Streamline and structure the code effectively.
       <div class="img-grid-duo">
         <img
           class="img-grid-duo-operation"
+          id="grid-duo-operation"
           src="image/6151de7f9ae2a47dee412711_supercharge.png"
           alt="image" />
         <img
           class="img-grid-duo-knowledge"
+          id="grid-duo-knowledge"
           src="image/6151de8fce86d6275b86bd60_zero.png"
           alt="image" />
       </div>
+      <!-- 1 -->
       <div class="text-grid-duo">
-        <div class="text-grid-duo-operation">
+        <section class="text-grid-duo-operation" id="grid-duo-operation">
           <p class="text-grid-duo-title">
             Supercharge your operations and <br />achieve more
           </p>
@@ -214,9 +219,12 @@ Streamline and structure the code effectively.
             <br />entirely for hotels. Designed so you can succeed with what
             <br />you have. For independents or multi-property groups.
           </p>
-          <a href="#" class="demo-operation">Explore the platform</a>
-        </div>
-        <div class="text-grid-duo-knowledge">
+          <a href="#" class="btn-demo" id="grid-duo-btn-demo"
+            >Explore the platform</a
+          >
+        </section>
+        <!-- 2 -->
+        <section class="text-grid-duo-knowledge" id="grid-duo-knowledge">
           <p class="text-grid-duo-title">
             Zero technical knowledge and <br />hardware required
           </p>
@@ -225,14 +233,11 @@ Streamline and structure the code effectively.
             <br />technology providers. Hotel Manager is the easiest, fastest
             <br />and most cost-effective.
           </p>
-          <a href="#" class="demo-knowledge">Book a demo</a>
-        </div>
+          <a href="#" class="btn-demo" id="grid-duo-btn-demo">Book a demo</a>
+        </section>
       </div>
     </div>
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
+
     <div class="section-4">
       <div class="subject">
         <h1 class="title">Designed to boost revenue.</h1>
@@ -241,15 +246,18 @@ Streamline and structure the code effectively.
       <div class="img-grid-duo">
         <img
           class="img-grid-duo-guests"
+          id="grid-duo-guests"
           src="image/6151dea3455c8f9ee038d437_nobody.png"
           alt="image" />
         <img
           class="img-grid-duo-contactless"
+          id="grid-duo-contactless"
           src="image/6151deaf2db6ebb8e16eb5f8_contactless.png"
           alt="image" />
       </div>
+      <!-- 1 -->
       <div class="text-grid-duo">
-        <div class="text-grid-duo-guests">
+        <section class="text-grid-duo-guests" id="grid-duo-guests">
           <p class="text-grid-duo-title">
             Nobody comes between you and <br />your guests
           </p>
@@ -258,9 +266,10 @@ Streamline and structure the code effectively.
             brand so you're always top of mind. This is where true <br />brand
             loyalty is built.
           </p>
-          <a href="#" class="demo-guests">Learn more</a>
-        </div>
-        <div class="text-grid-duo-contactless">
+          <a href="#" class="btn-demo" id="grid-duo-btn-demo">Learn more</a>
+        </section>
+        <!-- 2 -->
+        <section class="text-grid-duo-contactless" id="grid-duo-contactless">
           <p class="text-grid-duo-title">
             Contactless, yet never been more <br />connected
           </p>
@@ -270,24 +279,20 @@ Streamline and structure the code effectively.
             <br />Manager take care of all of it so you can focus on making
             <br />meaningful connections.
           </p>
-          <a href="#" class="demo-contactless">Book a demo</a>
-        </div>
+          <a href="#" class="btn-demo" id="grid-duo-btn-demo">Book a demo</a>
+        </section>
       </div>
     </div>
-    <!-- -->
-    <!-- -->
-    <!-- -->
-    <!-- -->
+
     <div class="section-5">
-      <div class="sign-up">
-        <p class="sign-up-title">Sign up with your hotel</p>
-        <p class="sign-up-description">
-          Try Hotel Manager today to launch your hotel app on web, iOS and
-          Android — in days, not months.
-        </p>
+      <p class="sign-up-title">Sign up with your hotel</p>
+      <p class="sign-up-description">
+        Try Hotel Manager today to launch your hotel app on web, iOS and Android
+        — in days, not months.
+      </p>
+      <div class="body-btn-bolt">
         <i class="material-icons" id="google-bolt">bolt</i>
-        <!-- edit class -->
-        <a href="#" class="body-demo">Get started</a>
+        <a href="#" class="btn-demo-bolt">Get started</a>
       </div>
     </div>
 
@@ -295,22 +300,23 @@ Streamline and structure the code effectively.
     <script src="script.js"></script>
   </body>
 
-  <!-- -->
-  <!-- -->
-  <!-- -->
-  <!-- -->
+  <!-- --------------------------------- FOOTER --------------------------------- -->
+
   <footer>
     <div class="footer-heading">
       <p class="footer-title">We hope you're <br />enjoying your stay.</p>
       <p class="footer-description">Look around</p>
     </div>
+
     <div>
       <a href="#" class="nav-footer" id="home">Home</a>
       <a href="#" class="nav-footer" id="programme">Partner Programme</a>
       <a href="#" class="nav-footer" id="company">Company</a>
       <a href="#" class="nav-footer" id="careers">Careers</a>
     </div>
-    <hr class="footer-line" />
+
+    <hr class="line" />
+
     <div class="footer-sub-heading">
       <p class="footer-sub-title">
         2024 © Hotel Manager is the trading name of Remotioned Technologies
@@ -319,6 +325,19 @@ Streamline and structure the code effectively.
       <a href="#" class="nav-sub-footer" id="privacy">Privacy</a>
       <a href="#" class="nav-sub-footer" id="terms">Terms & Conditions</a>
     </div>
+
+    <!-- cookie -->
+    <div class="cookie">
+      <p>
+        By Clicking on "Accept", you agree to the storing of cookies on your
+        device to enhance site navigation, analyze site usage, and assist in our
+        marketing <br />efforts.
+      </p>
+      <div class="btn-cookie">
+        <a href="#" class="btn-settings">Cookie Settings</a>
+        <a href="#" class="btn-deny">Deny All</a>
+        <a href="#" class="btn-accept">Accept All</a>
+      </div>
+    </div>
   </footer>
-  <!-- remove extra space -->
 </html>
