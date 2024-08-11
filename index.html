@@ -26,6 +26,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <!-- icon-check-circle https://fonts.google.com/ -->
+    <!-- icon-close https://fonts.google.com/ -->
+    <!-- icon-chevron-left https://fonts.google.com/ -->
+    <!-- icon-keyboard_arrow_down https://fonts.google.com/ -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -309,10 +312,10 @@
     </div>
 
     <div>
-      <a href="#" class="nav-footer" id="home">Home</a>
-      <a href="#" class="nav-footer" id="programme">Partner Programme</a>
-      <a href="#" class="nav-footer" id="company">Company</a>
-      <a href="#" class="nav-footer" id="careers">Careers</a>
+      <a href="#" class="nav-footer" id="btn-home">Home</a>
+      <a href="#" class="nav-footer" id="btn-programme">Partner Programme</a>
+      <a href="#" class="nav-footer" id="btn-company">Company</a>
+      <a href="#" class="nav-footer" id="btn-careers">Careers</a>
     </div>
 
     <hr class="line" />
@@ -322,22 +325,69 @@
         2024 © Hotel Manager is the trading name of Remotioned Technologies
         Group Limited (No. 12453650)
       </p>
-      <a href="#" class="nav-sub-footer" id="privacy">Privacy</a>
-      <a href="#" class="nav-sub-footer" id="terms">Terms & Conditions</a>
+      <a href="#" class="nav-sub-footer" id="btn-privacy">Privacy</a>
+      <a href="#" class="nav-sub-footer" id="btn-terms">Terms & Conditions</a>
     </div>
 
-    <!-- cookie -->
-    <div class="cookie">
+    <div class="cookie-bar">
       <p>
         By Clicking on "Accept", you agree to the storing of cookies on your
         device to enhance site navigation, analyze site usage, and assist in our
         marketing <br />efforts.
       </p>
       <div class="btn-cookie">
-        <a href="#" class="btn-settings">Cookie Settings</a>
-        <a href="#" class="btn-deny">Deny All</a>
-        <a href="#" class="btn-accept">Accept All</a>
+        <a href="#" class="nav-cookie" id="btn-settings">Cookie Settings</a>
+        <a href="#" class="nav-cookie" id="btn-deny">Deny All</a>
+        <a href="#" class="nav-cookie" id="btn-accept">Accept All</a>
       </div>
+      <i href="#" class="material-symbols-outlined" id="google-close">
+        close
+      </i>
+    </div>
+
+    <div class="cookie-setting">
+      <div class="cookie-setting-title">
+        <i href="#" class="material-symbols-outlined" id="google-chevron_left">
+          chevron_left
+        </i>
+        <p class="cookie-title">Manage Cookies</p>
+      </div>
+
+      <p class="cookie-description">
+        When you visit web sites, they may store or retrieve data <br />in your
+        web browser. This storage is often necessary for <br />basic
+        functionality of the web site or the storage may be <br />used for the
+        purposes of marketing, analytics, and <br />personalization of the web
+        site such as storing your <br />preferences.
+      </p>
+
+      <div class="cookie-setting-sub-title">
+        <!-- diff than sub title? if not, maybe retitle sub to just title? -->
+        <p class="cookie-sub-title">Analytics</p>
+        <!-- toggle https://uiverse.io/arghyaBiswasDev/shaggy-ape-11 -->
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <p class="cookie-description">
+        These cookies help us measure the performance of our <br />website and
+        features. They also help us improve our <br />offerings and better serve
+        our customers.
+      </p>
+
+      <div class="cookie-drop-down">
+        <p class="cookie-drop-down-title">Cookie details</p>
+        <i
+          href="#"
+          class="material-symbols-outlined"
+          id="google-keyboard_arrow_down">
+          keyboard_arrow_down
+        </i>
+      </div>
+
+      <a href="#" class="nav-cookie" id="btn-save">Save</a>
     </div>
   </footer>
 </html>

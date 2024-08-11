@@ -4,9 +4,8 @@
 
 // --------------------------------- BODY ---------------------------------
 
-// Retrieved the DOM element representing the "image-software-website".
+// Retrieved the DOM element representing the images.
 const websiteImage = document.querySelector(".img-software-web");
-// Retrieved the DOM element representing the "image-software-application".
 const applicationImage = document.querySelector(".img-software-app");
 
 // Initialised a variable to store the previous scroll position.
@@ -48,4 +47,58 @@ window.addEventListener("scroll", function () {
   applicationImage.style.transform = `translateX(-${slideDistance}px)`; // Applied the slide transformation.
   // Updated the previous scroll position for reference in the next scroll event.
   previousScrollPosition = currentScrollPosition;
+});
+
+//
+//
+//
+
+// --------------------------------- COOKIE ---------------------------------
+
+// Defined a function to close a popup.
+function popupClose(id) {
+  // Retrieved the DOM element representing the popup.
+  const popup = document.querySelector(id);
+  if (popup) {
+    // Applied a transition effect to the popup.
+    popup.style.transition = "opacity 1s ease-out";
+    // Set the opacity of the popup to 0.
+    popup.style.opacity = 0;
+    // Set a timeout to hide the popup immediately.
+    setTimeout(function () {
+      popup.style.display = "none";
+    }, 0);
+  }
+}
+
+// Ensures the DOM content is fully loaded before executing JavaScript.
+document.addEventListener("DOMContentLoaded", function () {
+  // Retrieved the DOM elements representing the buttons.
+  let btnClose = document.getElementById("google-close");
+  let btnDeny = document.getElementById("btn-deny");
+  let btnAccept = document.getElementById("btn-accept");
+  // let btnSave = document.getElementById("btn-save");
+
+  // Added event listeners to each button to trigger the close function.
+  if (btnClose) {
+    btnClose.addEventListener("click", function () {
+      popupClose(".cookie");
+    });
+  }
+  if (btnDeny) {
+    btnDeny.addEventListener("click", function () {
+      popupClose(".cookie");
+    });
+  }
+  if (btnAccept) {
+    btnAccept.addEventListener("click", function () {
+      popupClose(".cookie");
+    });
+  }
+  // if (btnSave) {
+  //   btnSave.addEventListener("click", function () {
+  //     popupClose(".cookie");
+  //   });
+  // }
+  // cookie-bar and cookie-settings open / close simultaneously
 });
