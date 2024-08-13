@@ -134,6 +134,11 @@ nav {
   margin: 30px auto;
 }
 
+.cookie-line {
+  border: 0.1px solid var(--color-grey-secondary);
+  margin: 4px;
+}
+
 .header-btn-bolt,
 .body-btn-bolt {
   background-color: var(--color-black);
@@ -479,6 +484,8 @@ footer {
 
 /* --------------------------------- COOKIE --------------------------------- */
 
+/* ----------------- BAR ----------------- */
+
 .cookie-bar {
   background-color: #f9fafb;
   bottom: 0;
@@ -517,6 +524,8 @@ footer {
   padding: 8.5px 8.5px;
 }
 
+/* ----------------- SETTING ----------------- */
+
 .cookie-setting {
   background-color: #f9fafb;
   bottom: 0;
@@ -530,28 +539,22 @@ footer {
   z-index: 1000;
 }
 
-.cookie-setting-title,
-.cookie-setting-sub-title,
-.cookie-drop-down {
-  display: flex;
-  margin: 0px;
+/* If the classes follow a pattern and only the numbers are changing, you can use an attribute selector: */
+[class^="cookie-section-"] {
+  margin: 0px 28px;
 }
 
-.cookie-description,
-.cookie-setting-sub-title,
-.cookie-drop-down {
-  margin: 10px 28px;
+.cookie-group {
+  display: flex;
 }
 
 #google-chevron_left {
   font-weight: 200;
-  margin-right: 4px;
   padding: 4px 0px;
+  position: absolute;
 }
 
-.cookie-title,
-.cookie-sub-title {
-  font-size: var(--size-secondary);
+.cookie-title {
   font-weight: var(--bold-secondary);
   margin: 0px;
   padding: 4px 0px;
@@ -614,18 +617,48 @@ input:checked + .slider:before {
   font-size: 14px;
 }
 
-.cookie-drop-down-title {
-  font-size: 11px;
-  margin: 0px;
-  padding: 2px 0px;
+/* ----------------- DROP-DOWN ----------------- */
+
+.cookie-section-3 {
+  display: flex;
 }
 
 #google-keyboard_arrow_down {
   font-size: 20px;
   font-weight: 200;
-  padding: 0px;
-  margin-left: 4px;
+  margin: 0px 4px;
 }
+
+.cookie-sub-title {
+  font-size: 12px;
+  margin: 1px 0px;
+}
+
+/* ----------------- TABLE ----------------- */
+
+.cookie-section-4 section {
+  display: flex;
+  font-size: 12px;
+}
+
+.cookie-section-4 {
+  border: 1px solid;
+  margin: 14px 70px;
+  padding: 10px;
+}
+
+.table-title {
+  flex-grow: 1;
+  font-weight: var(--bold-secondary);
+  margin: 4px;
+}
+
+.table-description {
+  margin: 4px;
+}
+
+/**/
+/**/
 
 #btn-save {
   background-color: var(--color-blue-primary);
@@ -636,3 +669,9 @@ input:checked + .slider:before {
   padding: 12px 193px;
   text-decoration: none;
 }
+
+/* 
+.privado {
+  margin: 50px auto;
+  background-color: #e7b9ee;
+} */
