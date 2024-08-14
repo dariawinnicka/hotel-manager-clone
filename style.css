@@ -657,21 +657,20 @@ input:checked + .slider:before {
   margin: 4px;
 }
 
-/**/
-/**/
+.cookie-setting {
+  overflow-y: scroll;
+}
+
+.privado {
+  font-size: 12px;
+  text-align: center;
+}
 
 #btn-save {
   background-color: var(--color-blue-primary);
   border-radius: 10px;
   color: var(--color-white);
   display: block;
-  margin: 405px 0px;
   padding: 12px 193px;
   text-decoration: none;
 }
-
-/* 
-.privado {
-  margin: 50px auto;
-  background-color: #e7b9ee;
-} */
