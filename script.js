@@ -82,24 +82,25 @@ document.addEventListener("DOMContentLoaded", function () {
   // Added event listeners to each button to trigger the close function.
   if (btnClose) {
     btnClose.addEventListener("click", function () {
-      popupClose(".cookie");
+      popupClose(".cookie-bar");
     });
   }
   if (btnDeny) {
     btnDeny.addEventListener("click", function () {
-      popupClose(".cookie");
+      popupClose(".cookie-bar");
     });
   }
   if (btnAccept) {
     btnAccept.addEventListener("click", function () {
-      popupClose(".cookie");
+      popupClose(".cookie-bar");
     });
   }
-  // if (btnSave) {
-  //   btnSave.addEventListener("click", function () {
-  //     popupClose(".cookie");
-  //   });
-  // }
+  if (btnSave) {
+    btnSave.addEventListener("click", function () {
+      popupClose(".cookie-setting");
+    });
+  }
+  // fix ^
   // cookie-bar and cookie-settings open / close simultaneously
 });
 
@@ -114,10 +115,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   let arrDown = document.querySelector("#google-keyboard_arrow_down");
+  let arrPosition = 0;
 
   if (arrDown) {
     arrDown.addEventListener("click", function () {
-      //
+      // drop-down
+      // ?
+      // arrow-rotate
+      arrDown.addEventListener("click", function () {
+        arrPosition = (arrPosition + 180) % 360; // Increment the angle by 180 degrees.
+        arrDown.style.transform = `rotate(${arrPosition}deg)`;
+      });
     });
   }
 });
