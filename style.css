@@ -44,6 +44,10 @@ Relocate btn.
   width: 80%;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 /* --------------------------------- NAVIGATION --------------------------------- */
 
 nav {
@@ -175,56 +179,37 @@ nav {
 }
 
 .btn-demo {
-  background-color: var(--color-black); /* diff */
+  background-color: var(--color-black);
   border-radius: 14px;
   color: var(--color-white);
   padding: 12px 21px;
   text-decoration: none;
 }
 
-/* */
-/* */
-/* */
-/* */
-/* */
-
 #btn-settings {
-  /* background-color: diff */
-  border-radius: 10px; /* diff */
-  color: var(--color-blue-primary); /* diff */
+  border-radius: 10px;
+  color: var(--color-blue-primary);
   padding: 12px 21px;
   text-decoration: none;
 }
 
 #btn-deny {
-  /* background-color: diff */
-  border-radius: 10px; /* diff */
+  border-radius: 10px;
   color: var(--color-grey-primary);
-  margin: 0px 5px; /* diff */
+  margin: 0px 5px;
   padding: 12px 21px;
   text-decoration: none;
 }
 
 #btn-accept {
-  background-color: var(--color-blue-primary); /* diff */
-  border-radius: 10px; /* diff */
+  background-color: var(--color-blue-primary);
+  border-radius: 10px;
   color: var(--color-white);
   padding: 12px 21px;
   text-decoration: none;
 }
 
-/* */
-/* */
-/* */
-/* */
-/* */
-
 /* --------------------------------- BODY - ANIMATION --------------------------------- */
-
-/*
-ACTION:
-Fix annimation via Javascript
-*/
 
 .animation {
   position: relative;
@@ -673,14 +658,6 @@ input:checked + .slider:before {
   display: block;
   padding: 12px 193px;
   text-decoration: none;
+  position: fixed;
+  bottom: 10px;
 }
-
-/**/
-/**/
-/**/
-
-/* #google-keyboard_arrow_up {
-  font-size: 20px;
-  font-weight: 200;
-  margin: 0px 4px;
-} */
