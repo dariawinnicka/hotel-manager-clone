@@ -6,10 +6,12 @@ This repository contains a clone of the [Hotel Manager](http://www.hotelmanager.
 
 Currently, this project includes:
 
-- **Navigation Bar**: The navigation bar exemplifies responsiveness with integrated Hotel Manager branding and essential links to company functions like "Company", "Log in", and "Demo". It also prominently features social media icons for seamless user engagement.
-- **Header**: Positioned at the forefront, the header section introduces the Hotel Manager platform with a bold visual hierarchy, emphasizing its comprehensive suite of integrated tools designed to optimize modern hotel management. A prominent "Book a demo" call-to-action invites immediate exploration.
-- **Sub Header**: Highlighting its integrated functionality, the sub-header underscores the platform's capability to tailor solutions for hotel operations. It emphasises tools aimed at enhancing operational efficiency and guest satisfaction.
-- **Body**: Featuring dynamic scroll-based animations, the body section vividly showcases the software and website interfaces, effectively captivating users.
+- **Navigation Bar**: Exemplifies superior responsiveness, incorporating Hotel Manager branding alongside critical links. Additionally, it features social media icons for enhanced user interaction.
+- **Header**: Positioned to capture immediate attention, the header introduces the Hotel Manager platform with a commanding visual hierarchy. It highlights the platform's extensive suite of integrated tools designed to streamline modern hotel management. A strategically placed "Book a demo" call-to-action invites prompt engagement.
+- **Sub Header**: Underlines the platform's integrated capabilities, focusing on its capacity to customise solutions for hotel operations. It accentuates tools designed to optimise operational efficiency and elevate guest satisfaction.
+- **Body**: Utilises dynamic scroll-based animations to effectively showcase the software and website interfaces, thereby engaging users with an interactive experience.
+- **Footer**: Provides supplementary navigation options and pertinent information, including a disclosure of the trading name and the legal entity.
+- **Cookie Bar**: Delivers comprehensive information on cookie usage, including options for managing cookie settings and choices to accept or decline cookies. It features detailed sections on cookie management and a summary of the specific cookies employed.
 
 ## Technologies
 
@@ -19,7 +21,7 @@ Currently, this project includes:
 - **CSS**: For styling and making the application visually appealing.
 - **Font Awesome**: For incorporating social media icons.
 - **CSS.gg**: For incorporating key icon.
-- **Google Fonts**: For incorporating tick icons.
+- **Google Fonts**: For incorporating fonts and tick icons.
 
 ## Connect
 

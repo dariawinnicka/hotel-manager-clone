@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btnArrow.addEventListener("click", function () {
       // Synchronised.
       popupClose(".cookie-setting");
-      popupOpen(".cookie-bar");
+      popupOpen(".cookie-bar"); // FIX: css alters when clicked
     });
   }
   if (btnSave) {
@@ -163,4 +163,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
-});
+}); // FIX: table overlaps
