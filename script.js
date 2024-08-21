@@ -67,6 +67,32 @@ function popupClose(id) {
   }
 }
 
+// Stored the original ".cookie-bar" and ".cookie-setting" style.
+let cookieBarStyle = {};
+let cookieSettingStyle = {};
+
+// Saved the original ".cookie-bar" style and opacity when the DOM content is loaded.
+document.addEventListener("DOMContentLoaded", function () {
+  const cookieBar = document.querySelector(".cookie-bar");
+  const cookieSetting = document.querySelector(".cookie-setting");
+
+  if (cookieBar) {
+    // "getComputedStyle()" returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain.
+    cookieBarStyle.display = getComputedStyle(cookieBar).display;
+    cookieBarStyle.opacity = getComputedStyle(cookieBar).opacity;
+  }
+  if (cookieSetting) {
+    cookieSettingStyle.display = getComputedStyle(cookieSetting).display;
+    cookieSettingStyle.opacity = getComputedStyle(cookieSetting).opacity;
+  }
+
+  // Set the opacity of ".cookie-setting" to 0.
+  if (cookieSetting) {
+    cookieSetting.style.display = "none";
+    cookieSetting.style.opacity = 0;
+  }
+});
+
 // Defined a function to open a popup.
 function popupOpen(id) {
   // Retrieved the DOM element representing the popup.
@@ -74,12 +100,23 @@ function popupOpen(id) {
   if (popup) {
     // Applied a transition effect to the popup.
     popup.style.transition = "opacity 1s ease-out";
-    // Set the opacity of the popup to 100.
-    popup.style.opacity = 100;
-    // Set a timeout to open the popup immediately.
-    setTimeout(function () {
-      popup.style.display = "block";
-    }, 0);
+
+    // // Set the opacity of the popup to 100.
+    // popup.style.opacity = 100;
+    // // Set a timeout to open the popup immediately.
+    // setTimeout(function () {
+    //   popup.style.display = "block";
+    // }, 0);
+
+    // Restored the saved ".cookie-bar" style and opacity.
+    if (id === ".cookie-bar") {
+      popup.style.display = cookieBarStyle.display;
+      popup.style.opacity = cookieBarStyle.opacity;
+      // Restored the saved ".cookie-setting" style and opacity.
+    } else if (id === ".cookie-setting") {
+      popup.style.display = cookieSettingStyle.display;
+      popup.style.opacity = cookieSettingStyle.opacity;
+    }
   }
 }
 
@@ -88,8 +125,6 @@ function popupOpen(id) {
 // Ensures the DOM content is fully loaded before executing JavaScript.
 document.addEventListener("DOMContentLoaded", function () {
   // Retrieved the DOM elements representing the buttons.
-  // let cookieBar = document.getElementById(".cookie-bar");
-  // let cookieSetting = document.getElementById(".cookie-setting");
   let btnSettings = document.getElementById("btn-settings");
   let btnDeny = document.getElementById("btn-deny");
   let btnAccept = document.getElementById("btn-accept");
@@ -124,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btnArrow.addEventListener("click", function () {
       // Synchronised.
       popupClose(".cookie-setting");
-      popupOpen(".cookie-bar"); // FIX: css alters when clicked
+      popupOpen(".cookie-bar");
     });
   }
   if (btnSave) {
