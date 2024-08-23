@@ -1,0 +1,18 @@
+/* fix: change folder and associated pictures from image to img in explorer and html */
+/* 
+fix: why has css not transferred to new link? */
+
+header {
+  background-color: rgb(230, 208, 251);
+}
+
+.title {
+}
+
+.sub-title {
+  /* bold only */
+}
+
+.sub-title,
+.description {
+}

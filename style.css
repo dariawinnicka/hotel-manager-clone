@@ -128,8 +128,6 @@ nav {
 
 /* FIX: relocate btn. */
 
-/* FIX: add cursor: pointer; to icons. */
-
 .line {
   border: 0.1px solid var(--color-grey-secondary);
   margin: 30px auto;
@@ -231,7 +229,7 @@ nav {
 
 /* --------------------------------- HEADER & BODY --------------------------------- */
 
-header, /* 70px nav + 80px header = 150px */
+header,
 .section-1,
 .section-2,
 .section-3,
@@ -296,15 +294,6 @@ body h1,
   margin: 0px;
 }
 
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-
 .sub-header div,
 .text-grid-trio div {
   flex: 1 1 0;
@@ -341,15 +330,6 @@ body h1,
 .text-grid-trio-launch {
   margin: 0px 50px;
 }
-
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
 
 .text-grid-trio {
   display: flex;
