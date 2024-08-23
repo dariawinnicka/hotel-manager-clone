@@ -2,6 +2,8 @@
 
 // --------------------------------- BODY ---------------------------------
 
+// ----------- ANIMATION -----------
+
 // Retrieved the DOM element representing the images.
 const imgWeb = document.querySelector(".img-software-web");
 const imgApp = document.querySelector(".img-software-app");
@@ -36,7 +38,7 @@ window.addEventListener("scroll", function () {
   imgWeb.style.transform = `perspective(600px) rotateX(${imgWebTiltAngle}deg)`; // Applied the tilt transformation.
 
   // Calculated the slide effect for the "img-software-app" based on the scroll position.
-  const maxSlideDistance = 100; // Defined the maximum slide distance.
+  const maxSlideDistance = 125; // Defined the maximum slide distance.
   const maxScrollHeight = documentHeight - viewportHeight; // Calculated the maximum scrollable height.
   const scrollPercent = currentScrollPosition / maxScrollHeight; // Calculated the scroll percentage.
   const slideDistance = scrollPercent * maxSlideDistance; // Calculated the slide distance.
@@ -101,13 +103,6 @@ function popupOpen(id) {
     // Applied a transition effect to the popup.
     popup.style.transition = "opacity 1s ease-out";
 
-    // // Set the opacity of the popup to 100.
-    // popup.style.opacity = 100;
-    // // Set a timeout to open the popup immediately.
-    // setTimeout(function () {
-    //   popup.style.display = "block";
-    // }, 0);
-
     // Restored the saved ".cookie-bar" style and opacity.
     if (id === ".cookie-bar") {
       popup.style.display = cookieBarStyle.display;
@@ -171,31 +166,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ----------- DROP DOWN -----------
 
+// Added an event listener to execute code when the DOM content was fully loaded.
 document.addEventListener("DOMContentLoaded", function () {
+  // Retrieved the DOM element representing the icon.
   let arrDown = document.querySelector("#google-keyboard_arrow_down");
+  // Initialised a variable to store the rotation position of the icon.
   let arrPosition = 0;
 
+  // Retrieved the DOM elements representing the sections.
+  let cookieTable = document.querySelector(".cookie-section-4");
+  let cookiePrivado = document.querySelector(".cookie-section-5");
+
+  // Checked if the elements existed and initialised their display styles to an empty string.
+  if (cookieTable) cookieTable.style.display = "";
+  if (cookiePrivado) cookiePrivado.style.display = "";
+
+  // Ensured the sections were hidden initially by setting their display styles to "none."
+  if (cookieTable && cookiePrivado) {
+    cookieTable.style.display = "none";
+    cookiePrivado.style.display = "none";
+  }
+
   if (arrDown) {
+    // Added a click event listener to the arrow icon.
     arrDown.addEventListener("click", function () {
-      // Retrieved the DOM elements representing the sections.
-      let cookieTable = document.querySelector(".cookie-section-4");
-      let cookiePrivado = document.querySelector(".cookie-section-5");
-
       if (cookieTable && cookiePrivado) {
-        if (cookieTable && cookiePrivado) {
-          const checkHidden =
-            cookieTable.style.display === "none" ||
-            cookieTable.style.display === "";
+        // Checked if the sections were currently hidden.
+        const checkHidden =
+          cookieTable.style.display === "none" ||
+          cookieTable.style.display === "";
 
-          cookieTable.style.display = checkHidden ? "block" : "none";
-          cookiePrivado.style.display = checkHidden ? "block" : "none";
-        }
+        // Changed the display property of the sections based on their current visibility.
+        cookieTable.style.display = checkHidden ? "block" : "none";
+        cookiePrivado.style.display = checkHidden ? "block" : "none";
       }
 
-      arrDown.addEventListener("click", function () {
-        arrPosition = (arrPosition + 180) % 360; // Incremented the angle by 180 degrees.
-        arrDown.style.transform = `rotate(${arrPosition}deg)`;
-      });
+      // Incremented the angle by 180 degrees for the rotation transformation.
+      arrPosition = (arrPosition + 180) % 360;
+      // Applied the rotation transformation to the icon.
+      arrDown.style.transform = `rotate(${arrPosition}deg)`;
     });
   }
-}); // FIX: table overlaps
+});
+
+// FIX: if clicked btn via cookie, do not scroll to top

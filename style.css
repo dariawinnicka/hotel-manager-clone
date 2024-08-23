@@ -1,11 +1,3 @@
-/* 
-ACTION:
-Responsive.
-Comments.
-README.
-Relocate btn.
-*/
-
 /* --------------------------------- GENERAL --------------------------------- */
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
@@ -63,6 +55,7 @@ nav {
 
 .nav-logo {
   align-items: center;
+  cursor: pointer;
   display: flex;
 }
 
@@ -132,6 +125,10 @@ nav {
 }
 
 /* --------------------------------- HEADER, BODY & FOOTER - BUTTON, ETC. --------------------------------- */
+
+/* FIX: relocate btn. */
+
+/* FIX: add cursor: pointer; to icons. */
 
 .line {
   border: 0.1px solid var(--color-grey-secondary);
@@ -299,6 +296,15 @@ body h1,
   margin: 0px;
 }
 
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
 .sub-header div,
 .text-grid-trio div {
   flex: 1 1 0;
@@ -307,6 +313,12 @@ body h1,
 .img-grid-trio {
   display: flex;
 }
+
+/* .overflow {
+  height: 335px;
+  width: auto;
+  overflow: hidden;
+} */
 
 .img-grid-trio img {
   border-radius: 25px;
@@ -317,13 +329,27 @@ body h1,
   object-fit: cover;
   object-position: center top;
   padding-top: 2%;
+  transition: all 0.1s ease-out;
   width: 365px;
+}
+
+.img-grid-trio img:hover {
+  transform: scale(1.01);
 }
 
 .img-grid-trio-launch,
 .text-grid-trio-launch {
-  margin: 0px 60px;
+  margin: 0px 50px;
 }
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
 
 .text-grid-trio {
   display: flex;
@@ -503,6 +529,7 @@ footer {
 
 #google-close {
   border-radius: 14px;
+  cursor: pointer;
   display: inline-block;
   font-weight: 200;
   margin: 15px 15px 15px -145px;
@@ -516,7 +543,9 @@ footer {
   bottom: 0;
   color: #363c40;
   display: block;
+  overflow-y: auto;
   padding: 10px;
+  padding-bottom: 70px;
   position: fixed;
   right: 0;
   top: 0;
@@ -609,6 +638,7 @@ input:checked + .slider:before {
 }
 
 #google-keyboard_arrow_down {
+  cursor: pointer;
   font-size: 20px;
   font-weight: 200;
   margin: 0px 4px;
@@ -642,22 +672,25 @@ input:checked + .slider:before {
   margin: 4px;
 }
 
-.cookie-setting {
-  overflow-y: scroll;
-}
-
 .privado {
   font-size: 12px;
   text-align: center;
+}
+
+.btn-cookie-group {
+  border-style: solid;
+  border-width: 15px 0px 12px 0px;
+  color: #f9fafb;
+  padding: 5px 0px 10px 0px;
+  position: fixed;
+  bottom: 0;
+  /* z-index: 100; */
 }
 
 #btn-save {
   background-color: var(--color-blue-primary);
   border-radius: 10px;
   color: var(--color-white);
-  display: block;
   padding: 12px 193px;
   text-decoration: none;
-  position: fixed;
-  bottom: 10px;
 }
