@@ -115,7 +115,7 @@ function popupOpen(id) {
   }
 }
 
-// ----------- OPEN / CLOSE APPLIED -----------
+// ----------- OPEN / CLOSE APPLICATION -----------
 
 // Ensures the DOM content is fully loaded before executing JavaScript.
 document.addEventListener("DOMContentLoaded", function () {
@@ -208,5 +208,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
-// FIX: if clicked btn via cookie, do not scroll to top

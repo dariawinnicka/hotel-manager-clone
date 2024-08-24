@@ -9,7 +9,7 @@
     <title>Hotel Manager</title>
     <link
       rel="shortcut icon"
-      href="image/gknwtj8sum0zdqedczhg.webp"
+      href="img/gknwtj8sum0zdqedczhg.webp"
       type="favicon" />
 
     <!-- fa-linkedin https://fontawesome.com/ -->
@@ -41,7 +41,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" />
 
     <!-- connect-css -->
-    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="/nav/nav.css" />
   </head>
 
   <!-- --------------------------------- NAVIGATION --------------------------------- -->
@@ -50,9 +50,9 @@
     <div class="nav-logo">
       <img
         class="nav-company-logo"
-        src="image/65292600bddf8430fb98972d_Hotel Manager Logomark.png"
+        src="img/65292600bddf8430fb98972d_Hotel Manager Logomark.png"
         alt="image" />
-      <a href="#!" class="nav-company-title">Hotel Manager</a>
+      <a href="index.html" class="nav-company-title">Hotel Manager</a>
     </div>
 
     <div class="nav-btn">
@@ -76,21 +76,23 @@
   <!-- --------------------------------- HEADER --------------------------------- -->
 
   <header>
-    <div>
-      <p class="sub-title">Book a Demo</p>
-      <p class="title">Meet your new superpower</p>
-      <p class="description">
-        Streamline workflows, deliver hyper-personalised <br />guest
-        experiences, and make data-driven <br />decisions with our platform.
-      </p class="description">
-      <p>Experience the power.</p>
-      <a href="/nav/demo.html" class="btn-demo">Demo</a>
-    </div>
-    <div>
-      <img
-        class="header-img"
-        src="/Users/dariawinnicka/Documents/-- Software/-- Project/a_/image/Screenshot 2024-08-23 at 18.35.07.png"
-        alt="image" />
+    <div class="TEST">
+      <div>
+        <p class="sub-title">Book a Demo</p>
+        <p class="title">Meet your new superpower</p>
+        <p class="description">
+          Streamline workflows, deliver hyper-personalised <br />guest
+          experiences, and make data-driven <br />decisions with our platform.
+        </p>
+        <p class="description">Experience the power.</p>
+        <a href="/nav/demo.html" class="btn-demo" id="btn-demo">Book a demo</a>
+      </div>
+      <div>
+        <img
+          class="img-header"
+          src="/Users/dariawinnicka/Documents/-- Software/-- Project/a_/img/Screenshot 2024-08-23 at 18.35.07.png"
+          alt="image" />
+      </div>
     </div>
   </header>
 
@@ -98,7 +100,7 @@
 
   <body>
     <!-- connect-javascript -->
-    <script src="nav.js"></script>
+    <script src="/nav/nav.js"></script>
   </body>
 
   <!-- --------------------------------- FOOTER --------------------------------- -->
@@ -110,12 +112,16 @@
     </div>
 
     <div>
-      <a href="#!" class="nav-footer" id="btn-home">Home</a>
+      <a href="index.html" class="nav-footer" id="btn-home">Home</a>
       <a href="footer/partner.html" class="nav-footer" id="btn-programme"
         >Partner Programme</a
       >
-      <a href="#!" class="nav-footer" id="btn-company">Company</a>
-      <a href="#!" class="nav-footer" id="btn-careers">Careers</a>
+      <a href="/nav/company.html" class="nav-footer" id="btn-company"
+        >Company</a
+      >
+      <a href="/nav/company.html" class="nav-footer" id="btn-careers"
+        >Careers</a
+      >
     </div>
 
     <hr class="line" />
@@ -128,160 +134,9 @@
       <a href="/footer/privacy.html" class="nav-sub-footer" id="btn-privacy"
         >Privacy</a
       >
-      <a href="#!" class="nav-sub-footer" id="btn-terms">Terms & Conditions</a>
-    </div>
-
-    <div class="cookie-bar">
-      <p>
-        By Clicking on "Accept", you agree to the storing of cookies on your
-        device to enhance site navigation, analyze site usage, and assist in our
-        marketing <br />efforts.
-      </p>
-      <div class="btn-cookie">
-        <a href="#!" class="nav-cookie" id="btn-settings">Cookie Settings</a>
-        <a href="#!" class="nav-cookie" id="btn-deny">Deny All</a>
-        <a href="#!" class="nav-cookie" id="btn-accept">Accept All</a>
-      </div>
-      <i href="#!" class="material-symbols-outlined" id="google-close">
-        close
-      </i>
-    </div>
-
-    <div class="cookie-setting">
-      <i href="#!" class="material-symbols-outlined" id="google-chevron_left">
-        chevron_left
-      </i>
-      <div class="cookie-section-1">
-        <div class="cookie-group">
-          <p class="cookie-title">Manage Cookies</p>
-        </div>
-        <p class="cookie-description">
-          When you visit web sites, they may store or retrieve data <br />in
-          your web browser. This storage is often necessary for <br />basic
-          functionality of the web site or the storage may be <br />used for the
-          purposes of marketing, analytics, and <br />personalization of the web
-          site such as storing your <br />preferences.
-        </p>
-      </div>
-      <div class="cookie-section-2">
-        <div class="cookie-group">
-          <p class="cookie-title">Analytics</p>
-          <!-- toggle https://uiverse.io/arghyaBiswasDev/shaggy-ape-11 -->
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider"></span>
-          </label>
-        </div>
-        <p class="cookie-description">
-          These cookies help us measure the performance of our <br />website and
-          features. They also help us improve our <br />offerings and better
-          serve our customers.
-        </p>
-      </div>
-      <div class="cookie-section-3">
-        <p class="cookie-sub-title">Cookie details</p>
-        <i
-          href="#!"
-          class="material-symbols-outlined"
-          id="google-keyboard_arrow_down">
-          keyboard_arrow_down
-        </i>
-      </div>
-      <div class="cookie-section-4">
-        <div>
-          <section>
-            <p class="table-title">Cookie Name</p>
-            <p class="table-description">_ga</p>
-          </section>
-          <section>
-            <p class="table-title">Provider</p>
-            <p class="table-description">.hotelmanager.co</p>
-          </section>
-          <hr class="cookie-line" />
-        </div>
-        <div>
-          <section>
-            <p class="table-title">Cookie Name</p>
-            <p class="table-description">_ga_JQHJBDB4Y9</p>
-          </section>
-          <section>
-            <p class="table-title">Provider</p>
-            <p class="table-description">.hotelmanager.co</p>
-          </section>
-          <hr class="cookie-line" />
-        </div>
-        <div>
-          <section>
-            <p class="table-title">Cookie Name</p>
-            <p class="table-description">_hjAbsoluteSessionInProgress</p>
-          </section>
-          <section>
-            <p class="table-title">Provider</p>
-            <p class="table-description">.hotelmanager.co</p>
-          </section>
-          <hr class="cookie-line" />
-        </div>
-        <div>
-          <section>
-            <p class="table-title">Cookie Name</p>
-            <p class="table-description">_hjFirstSeen</p>
-          </section>
-          <section>
-            <p class="table-title">Provider</p>
-            <p class="table-description">.hotelmanager.co</p>
-          </section>
-          <hr class="cookie-line" />
-        </div>
-        <div>
-          <section>
-            <p class="table-title">Cookie Name</p>
-            <p class="table-description">_hjid</p>
-          </section>
-          <section>
-            <p class="table-title">Provider</p>
-            <p class="table-description">.hotelmanager.co</p>
-          </section>
-          <hr class="cookie-line" />
-        </div>
-        <div>
-          <section>
-            <p class="table-title">Cookie Name</p>
-            <p class="table-description">_hjIncludedInPageviewSample</p>
-          </section>
-          <section>
-            <p class="table-title">Provider</p>
-            <p class="table-description">www.hotelmanager.co</p>
-          </section>
-          <hr class="cookie-line" />
-        </div>
-        <div>
-          <section>
-            <p class="table-title">Cookie Name</p>
-            <p class="table-description">_hjTLDTest</p>
-          </section>
-          <section>
-            <p class="table-title">Provider</p>
-            <p class="table-description">.hotelmanager.co</p>
-          </section>
-          <hr class="cookie-line" />
-        </div>
-        <div>
-          <section>
-            <p class="table-title">Cookie Name</p>
-            <p class="table-description">attribution_user_id</p>
-          </section>
-          <section>
-            <p class="table-title">Provider</p>
-            <p class="table-description">.typeform.com</p>
-          </section>
-        </div>
-      </div>
-      <div class="cookie-section-5">
-        <p class="privado">Powered by Privado</p>
-      </div>
-      <div class="btn-cookie-group">
-        <a href="#!" class="nav-cookie" id="btn-save">Save</a>
-      </div>
+      <a href="index.html" class="nav-sub-footer" id="btn-terms"
+        >Terms & Conditions</a
+      >
     </div>
   </footer>
 </html>
