@@ -15,6 +15,8 @@
 
   font-family: "DM Sans", sans-serif;
   font-size: 17px;
+  margin: 0px auto;
+  width: 80%;
 }
 
 html {
@@ -32,21 +34,17 @@ nav {
   height: 70px;
   position: sticky;
   top: 0px;
-  width: 100%;
   z-index: 1000;
 }
 
-.nav {
+.nav-logo {
+  align-items: center;
+  cursor: pointer;
   display: flex;
-  width: 80%;
-  margin: 0% 10%;
-  background-color: rgb(191, 220, 182);
 }
 
 .nav-logo img {
-  cursor: pointer;
   height: 40px;
-  background-color: #568feb;
 }
 
 .nav-logo a {
@@ -56,7 +54,6 @@ nav {
   letter-spacing: 0.5px;
   text-decoration: none;
   margin-left: 10px;
-  background-color: rgb(147, 148, 150);
 }
 
 .nav-btn {
@@ -92,7 +89,7 @@ nav {
 .gg-key {
   color: var(--color-blue-primary);
   right: -30px;
-  top: 19px;
+  top: 17px;
 }
 
 .btn-log-in {
@@ -113,53 +110,101 @@ nav {
   text-decoration: none;
 }
 
-/* --------------------------------- DEMO --------------------------------- */
+/* /rvw@end --------------------------------- HEADER --------------------------------- */
 
-header {
-  background-color: #f4f8ff;
+header,
+[class^="section-"],
+.header {
+  margin-top: 80px;
 }
 
 .header {
   display: flex;
-  padding: 150px 150px 250px 150px;
 }
 
-header p {
-  margin: 20px 0px;
+.header-text {
+  padding-right: 10px;
+}
+
+.header-title {
+  font-size: 65px;
+  line-height: 70px;
+  margin: 0px;
+}
+
+.header-description {
+  font-size: 21px;
+  font-weight: normal;
+  margin: 30px auto 0px auto;
+}
+
+/* .img-software-features {
+  object-fit: scale-down;
+} */
+
+/* /rvw@end --------------------------------- BODY --------------------------------- */
+
+.section-1 {
+  display: flex;
 }
 
 .title {
-  font-size: 45px;
+  flex: 0 0 40%;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 50px;
+  margin: 0px;
+  padding-right: 21px;
 }
 
-.title,
-.sub-title {
-  font-weight: bold;
+.description > * {
+  margin-top: 0;
 }
 
-.sub-title,
 .description {
+  font-size: 21px;
+  font-weight: normal; /* /rvw@end */
+}
+
+/*  RESUME HERE  */
+
+.section-2 {
+  /* */
+}
+
+.achievement {
+  text-align: center;
+}
+
+.achievement-year {
+  font-size: 30px;
+  margin: 0px;
+}
+
+.achievement-title {
   font-size: 18px;
+  font-weight: 550;
+  margin: 10px 0px 6px 0px;
+}
+
+.achievement-description {
   color: var(--color-grey-primary);
+  font-size: 18px;
+  font-weight: normal; /* /rvw@end */
 }
 
-#description {
-  margin-bottom: 35px;
-}
+/* */
+/* */
+/* */
 
-header img {
-  height: 700px;
-  position: absolute;
-  top: 82px;
-  right: 0px;
+.section-3 {
+  /* */
 }
 
 /* --------------------------------- FOOTER --------------------------------- */
 
 footer {
-  /* margin: 240px 0px 10px 0px; */
-  margin: 0px auto;
-  width: 80%;
+  margin: 240px 0px 10px 0px;
 }
 
 .footer-title {
@@ -173,11 +218,6 @@ footer {
   font-size: 18px;
   font-weight: 550;
   margin: 20px 0px;
-}
-
-.line {
-  border: 0.1px solid var(--color-grey-secondary);
-  margin: 30px auto;
 }
 
 .nav-footer {
