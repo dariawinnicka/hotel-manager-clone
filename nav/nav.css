@@ -110,7 +110,7 @@ nav {
   text-decoration: none;
 }
 
-/* /rvw@end --------------------------------- HEADER --------------------------------- */
+/* /rvw@end /company.html --------------------------------- HEADER --------------------------------- */
 
 header,
 [class^="section-"],
@@ -120,6 +120,7 @@ header,
 
 .header {
   display: flex;
+  background-color: red;
 }
 
 .header-text {
@@ -142,10 +143,11 @@ header,
   object-fit: scale-down;
 } */
 
-/* /rvw@end --------------------------------- BODY --------------------------------- */
+/* /rvw@end /company.html --------------------------------- BODY --------------------------------- */
 
 .section-1 {
   display: flex;
+  background-color: orange;
 }
 
 .title {
@@ -158,22 +160,32 @@ header,
 }
 
 .description > * {
-  margin-top: 0;
-}
-
-.description {
   font-size: 21px;
-  font-weight: normal; /* /rvw@end */
+  margin: 0px;
 }
 
-/*  RESUME HERE  */
+.description-middle-paragraph {
+  margin: 20px 0px;
+}
 
 .section-2 {
   /* */
+  display: flex;
+  background-color: yellow;
+}
+
+.btn-carousel {
+  border-color: var(--color-grey-primary);
+  border-style: solid;
+  border-radius: 14px;
+  color: var(--color-grey-primary);
+  margin: 100px 0px;
+  padding: 10px 15px;
+  text-decoration: none;
 }
 
 .achievement {
-  text-align: center;
+  text-align: left;
 }
 
 .achievement-year {
@@ -184,13 +196,13 @@ header,
 .achievement-title {
   font-size: 18px;
   font-weight: 550;
-  margin: 10px 0px 6px 0px;
+  margin: 10px 0px;
 }
 
 .achievement-description {
   color: var(--color-grey-primary);
   font-size: 18px;
-  font-weight: normal; /* /rvw@end */
+  font-weight: normal;
 }
 
 /* */
@@ -199,6 +211,7 @@ header,
 
 .section-3 {
   /* */
+  background-color: greenyellow;
 }
 
 /* --------------------------------- FOOTER --------------------------------- */
