@@ -169,9 +169,29 @@ header,
 }
 
 .section-2 {
-  /* */
   display: flex;
   background-color: yellow;
+  overflow: hidden;
+  padding: 0px 60px;
+  position: relative;
+}
+
+.section-2::before,
+.section-2::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  background: rgb(255, 156, 156);
+  z-index: 5;
+}
+
+.section-2::before {
+  left: 0px;
+}
+
+.section-2::after {
+  right: 0px;
 }
 
 .btn-carousel {
@@ -181,10 +201,28 @@ header,
   color: var(--color-grey-primary);
   margin: 100px 0px;
   padding: 10px 15px;
+  position: absolute;
   text-decoration: none;
 }
 
+#google-keyboard_arrow_left,
+#google-keyboard_arrow_right {
+  top: -27px;
+  z-index: 10;
+}
+
+#google-keyboard_arrow_left {
+  left: 0px;
+}
+
+#google-keyboard_arrow_right {
+  right: 0px;
+}
+
 .achievement {
+  background-color: #e3ddcf;
+  flex: 0 0 280px;
+  margin-right: 30px;
   text-align: left;
 }
 
@@ -194,14 +232,14 @@ header,
 }
 
 .achievement-title {
-  font-size: 18px;
+  font-size: 18px; /* rv/root */
   font-weight: 550;
   margin: 10px 0px;
 }
 
 .achievement-description {
   color: var(--color-grey-primary);
-  font-size: 18px;
+  font-size: 18px; /* rv/root */
   font-weight: normal;
 }
 
