@@ -120,7 +120,6 @@ header,
 
 .header {
   display: flex;
-  background-color: blueviolet;
 }
 
 .header-text {
@@ -143,7 +142,6 @@ header,
 
 .section-1 {
   display: flex;
-  background-color: orange;
 }
 
 .title {
@@ -165,7 +163,6 @@ header,
 }
 
 .section-2 {
-  background-color: yellow;
   display: flex;
   overflow: hidden;
   padding-left: 50px;
@@ -179,7 +176,7 @@ header,
 
 .achievement {
   flex: 0 0 280px;
-  margin-right: 30px;
+  margin-right: 100px;
   text-align: left;
 }
 
@@ -200,12 +197,8 @@ header,
   font-weight: normal;
 }
 
-/* font-size: 18px; rv/root */
-/* */
-/* */
-
 .section-3 {
-  background-color: greenyellow;
+  justify-content: center;
 }
 
 #title {
@@ -214,6 +207,15 @@ header,
 
 .sub-title {
   font-size: 21px;
+  font-weight: normal;
+  margin: 30px auto 0px auto;
+  text-align: center;
+}
+
+.body-grid {
+  display: flex;
+  gap: 21px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -221,30 +223,115 @@ header,
   color: var(--color-grey-primary);
   font-size: 200%;
   font-weight: 350;
-  background-color: #1c73e8;
-}
-
-.sub-header {
-  justify-content: center;
-  margin: 0px 5px;
-  display: inline-block;
-  background-color: #6d7787;
 }
 
 .sub-header-title {
   font-size: 18px;
   font-weight: 550;
   margin: 10px 0px 6px 0px;
-  background-color: #1c73e8;
-  align-content: center;
 }
 
 .sub-header-description {
   color: var(--color-grey-primary);
   margin: 0px;
-  background-color: #1c73e8;
-  align-content: center;
 }
+
+/* */
+/* */
+/* */
+/* */
+
+.position {
+  background-color: pink;
+
+  border: solid;
+  border-color: var(--color-grey-secondary);
+  border-radius: 10px;
+  margin: 30px 0px;
+  padding: 10px;
+}
+
+.position-group {
+  background-color: #c11673;
+}
+
+.position-title {
+  background-color: rgb(189, 247, 189);
+  font-size: 18px;
+  font-weight: 550;
+  margin: 0px 10px 10px 0px;
+  padding: 7px 0px;
+}
+
+.position-tag {
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 550;
+  margin: 0px 10px 10px 0px;
+  padding: 7px;
+}
+
+#position-tag-engineering {
+  background-color: var(--color-blue-secondary);
+  color: var(--color-blue-primary);
+}
+
+.position-description {
+  background-color: rgb(248, 86, 86);
+  color: var(--color-grey-primary);
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0px;
+}
+
+.position-heading,
+.position-spec-group,
+.position-view {
+  display: flex;
+}
+
+.material-symbols-outlined {
+  background-color: #fdf3fb;
+  align-content: center;
+  color: var(--color-grey-primary);
+  font-size: 125%;
+  font-weight: 350;
+}
+
+#google-location,
+#google-contract {
+  margin: 0px 5px 0px 0px;
+}
+
+#google-arrow-top-right {
+  margin: 0px 0px 0px 5px;
+}
+
+.position-spec {
+  margin: 10px 0px;
+  background-color: #e946f4;
+}
+
+.position-view {
+  background-color: #ec9d36;
+}
+
+.position-spec-title,
+.position-view-title {
+  background-color: rgb(64, 238, 232);
+  font-size: 18px;
+  color: var(--color-grey-primary);
+  font-weight: normal;
+}
+
+#position-tag-design {
+  background-color: #fdf3fb;
+  color: #c11673;
+}
+
+/* REDUCE MARGIN REP */
+/* ADD SPACE BETWEEN .section(s) */
+/* font-size: 18px; rv/root */
 
 /* --------------------------------- FOOTER --------------------------------- */
 
