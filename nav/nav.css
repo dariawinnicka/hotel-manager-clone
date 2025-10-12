@@ -110,7 +110,7 @@ nav {
   text-decoration: none;
 }
 
-/* /rvw@end /company.html --------------------------------- HEADER --------------------------------- */
+/* company.html --------------------------------- HEADER --------------------------------- */
 
 header,
 [class^="section-"],
@@ -120,7 +120,7 @@ header,
 
 .header {
   display: flex;
-  background-color: red;
+  background-color: blueviolet;
 }
 
 .header-text {
@@ -139,11 +139,7 @@ header,
   margin: 30px auto 0px auto;
 }
 
-/* .img-software-features {
-  object-fit: scale-down;
-} */
-
-/* /rvw@end /company.html --------------------------------- BODY --------------------------------- */
+/* company.html --------------------------------- BODY --------------------------------- */
 
 .section-1 {
   display: flex;
@@ -169,58 +165,19 @@ header,
 }
 
 .section-2 {
-  display: flex;
   background-color: yellow;
+  display: flex;
   overflow: hidden;
-  padding: 0px 60px;
+  padding-left: 50px;
   position: relative;
 }
 
-.section-2::before,
-.section-2::after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 100%;
-  background: rgb(255, 156, 156);
-  z-index: 5;
-}
-
-.section-2::before {
-  left: 0px;
-}
-
-.section-2::after {
-  right: 0px;
-}
-
-.btn-carousel {
-  border-color: var(--color-grey-primary);
-  border-style: solid;
-  border-radius: 14px;
-  color: var(--color-grey-primary);
-  margin: 100px 0px;
-  padding: 10px 15px;
-  position: absolute;
-  text-decoration: none;
-}
-
-#google-keyboard_arrow_left,
-#google-keyboard_arrow_right {
-  top: -27px;
-  z-index: 10;
-}
-
-#google-keyboard_arrow_left {
-  left: 0px;
-}
-
-#google-keyboard_arrow_right {
-  right: 0px;
+.carousel-track {
+  display: flex;
+  transition: transform 0s linear;
 }
 
 .achievement {
-  background-color: #e3ddcf;
   flex: 0 0 280px;
   margin-right: 30px;
   text-align: left;
@@ -232,24 +189,61 @@ header,
 }
 
 .achievement-title {
-  font-size: 18px; /* rv/root */
+  font-size: 18px;
   font-weight: 550;
   margin: 10px 0px;
 }
 
 .achievement-description {
   color: var(--color-grey-primary);
-  font-size: 18px; /* rv/root */
+  font-size: 18px;
   font-weight: normal;
 }
 
-/* */
+/* font-size: 18px; rv/root */
 /* */
 /* */
 
 .section-3 {
-  /* */
   background-color: greenyellow;
+}
+
+#title {
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 21px;
+  text-align: center;
+}
+
+#google-check-circle {
+  color: var(--color-grey-primary);
+  font-size: 200%;
+  font-weight: 350;
+  background-color: #1c73e8;
+}
+
+.sub-header {
+  justify-content: center;
+  margin: 0px 5px;
+  display: inline-block;
+  background-color: #6d7787;
+}
+
+.sub-header-title {
+  font-size: 18px;
+  font-weight: 550;
+  margin: 10px 0px 6px 0px;
+  background-color: #1c73e8;
+  align-content: center;
+}
+
+.sub-header-description {
+  color: var(--color-grey-primary);
+  margin: 0px;
+  background-color: #1c73e8;
+  align-content: center;
 }
 
 /* --------------------------------- FOOTER --------------------------------- */
@@ -280,6 +274,11 @@ footer {
 
 #btn-careers {
   margin-bottom: 0px;
+}
+
+.line {
+  border: 0.1px solid var(--color-grey-secondary);
+  margin: 30px auto;
 }
 
 .footer-sub-heading {

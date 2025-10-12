@@ -1,35 +1,21 @@
-const section = document.querySelector(".section-2");
-const slides = Array.from(section.querySelectorAll(".achievement"));
-const prevBtn = document.getElementById("google-keyboard_arrow_left");
-const nextBtn = document.getElementById("google-keyboard_arrow_right");
+const track = document.querySelector(".carousel-track");
+const slides = Array.from(track.children);
+const slidesNumber = 6; // number of original slides
+const slideWidth = slides[0].getBoundingClientRect().width + 30;
 
-const track = document.createElement("div");
-track.style.display = "flex";
-track.style.transition = "transform 0.5s ease-in-out";
-track.style.willChange = "transform";
+let position = 0;
+const speed = 0.4; // pixels per frame
 
-slides.forEach((slide) => track.appendChild(slide));
-section.insertBefore(track, nextBtn);
+function animate() {
+  position += speed;
 
-const slideWidth = slides[0].getBoundingClientRect().width + 20;
-let index = 0;
+  // Reset after scrolling through the first set of slides
+  if (position >= slideWidth * slidesNumber) {
+    position = 0;
+  }
 
-const maxIndex = slides.length - 3;
-
-function updateCarousel() {
-  track.style.transform = `translateX(${-index * slideWidth}px)`;
+  track.style.transform = `translateX(-${position}px)`;
+  requestAnimationFrame(animate);
 }
 
-nextBtn.addEventListener("click", () => {
-  if (index < maxIndex) {
-    index++;
-    updateCarousel();
-  }
-});
-
-prevBtn.addEventListener("click", () => {
-  if (index > 0) {
-    index--;
-    updateCarousel();
-  }
-});
+animate();
