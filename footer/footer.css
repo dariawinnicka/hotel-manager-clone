@@ -1,0 +1,168 @@
+/* --------------------------------- GENERAL --------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --color-white: #ffffff; /* background / btn */
+  --color-black: #000000; /* text / btn */
+  --color-grey-primary: #6d7787; /* text / icon */
+  --color-grey-secondary: #f9fafb; /* hover / line / cookie */
+  --color-grey-tertiary: #363c40; /* coookie */
+  --color-blue-primary: #1c73e8; /* text / btn */
+  --color-blue-secondary: #eef4fe; /* hover */
+
+  --color-shadow: rgba(149, 157, 165, 0.2) 0 0 24px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  margin: 0px auto;
+  width: 80%;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* --------------------------------- NAVIGATION --------------------------------- */
+
+nav {
+  align-items: center;
+  background-color: var(--color-white);
+  display: flex;
+  font-size: 15px;
+  height: 70px;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+.nav-logo {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+}
+
+.nav-logo img {
+  height: 40px;
+}
+
+.nav-logo a {
+  color: var(--color-black);
+  font-size: 21px;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.nav-btn {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-btn a {
+  align-items: center;
+  border-radius: 14px;
+  display: inline-flex;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.btn-company,
+.fa-linkedin,
+.fa-twitter {
+  color: var(--color-black);
+  padding: 12px 18px;
+}
+
+.fa-linkedin {
+  margin-right: 6px;
+}
+
+.btn-company:hover,
+.fa-linkedin:hover,
+.fa-twitter:hover {
+  background-color: var(--color-grey-secondary);
+}
+
+.gg-key {
+  color: var(--color-blue-primary);
+  right: -30px;
+  top: 17px;
+}
+
+.btn-log-in {
+  color: var(--color-blue-primary);
+  padding: 12px 20px;
+  text-indent: 20px;
+}
+
+.btn-log-in:hover {
+  background-color: var(--color-blue-secondary);
+}
+
+.btn-demo {
+  background-color: var(--color-black);
+  border-radius: 14px;
+  color: var(--color-white);
+  padding: 12px 21px;
+  text-decoration: none;
+}
+
+/* terms.html --------------------------------- BODY --------------------------------- */
+
+/* --------------------------------- FOOTER --------------------------------- */
+
+footer {
+  margin: 240px 0px 10px 0px;
+}
+
+.footer-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.footer-description {
+  color: var(--color-grey-primary);
+  font-size: 18px;
+  font-weight: 550;
+  margin: 20px 0px;
+}
+
+.nav-footer {
+  color: var(--color-grey-primary);
+  display: block;
+  margin: 10px 0px;
+  text-decoration: none;
+}
+
+#btn-careers {
+  margin-bottom: 0px;
+}
+
+.line {
+  border: 0.1px solid var(--color-grey-secondary);
+  margin: 30px auto;
+}
+
+.footer-sub-heading {
+  align-items: center;
+  color: var(--color-grey-primary);
+  display: flex;
+  font-size: 13px;
+  margin: 0px;
+}
+
+.nav-sub-footer {
+  color: var(--color-grey-primary);
+  display: inline-block;
+  font-weight: 550;
+  margin-left: auto;
+  text-decoration: none;
+}
+
+#btn-terms {
+  margin-left: 15px;
+}

@@ -166,6 +166,17 @@ body h1,
 
 /* --------------------------------- BODY --------------------------------- */
 
+/* body {
+  opacity: 0;
+  filter: blur(5px);
+  transition: opacity 0.8s ease, filter 0.8s ease;
+}
+
+body.loaded {
+  opacity: 1;
+  filter: blur(0);
+} */
+
 .animation {
   position: relative;
 }
@@ -223,12 +234,6 @@ body h1,
 .img-grid-trio {
   display: flex;
 }
-
-/* .overflow {
-  height: 335px;
-  width: auto;
-  overflow: hidden;
-} */
 
 .img-grid-trio img {
   border-radius: 25px;

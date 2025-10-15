@@ -113,13 +113,13 @@ nav {
 /* company.html --------------------------------- HEADER --------------------------------- */
 
 header,
-[class^="section-"],
 .header {
   margin-top: 80px;
+  display: flex;
 }
 
-.header {
-  display: flex;
+[class^="section-"] {
+  margin-top: 200px;
 }
 
 .header-text {
@@ -139,6 +139,17 @@ header,
 }
 
 /* company.html --------------------------------- BODY --------------------------------- */
+
+/* body {
+  opacity: 0;
+  filter: blur(5px);
+  transition: opacity 0.8s ease, filter 0.8s ease;
+}
+
+body.loaded {
+  opacity: 1;
+  filter: blur(0);
+} */
 
 .section-1 {
   display: flex;
@@ -236,14 +247,7 @@ header,
   margin: 0px;
 }
 
-/* */
-/* */
-/* */
-/* */
-
 .position {
-  background-color: pink;
-
   border: solid;
   border-color: var(--color-grey-secondary);
   border-radius: 10px;
@@ -251,23 +255,19 @@ header,
   padding: 10px;
 }
 
-.position-group {
-  background-color: #c11673;
+.position-title,
+.position-tag {
+  font-size: 18px;
+  font-weight: 550;
+  margin: 0px 10px 0px 0px;
 }
 
 .position-title {
-  background-color: rgb(189, 247, 189);
-  font-size: 18px;
-  font-weight: 550;
-  margin: 0px 10px 10px 0px;
   padding: 7px 0px;
 }
 
 .position-tag {
   border-radius: 10px;
-  font-size: 18px;
-  font-weight: 550;
-  margin: 0px 10px 10px 0px;
   padding: 7px;
 }
 
@@ -277,50 +277,38 @@ header,
 }
 
 .position-description {
-  background-color: rgb(248, 86, 86);
   color: var(--color-grey-primary);
   font-size: 18px;
   font-weight: normal;
-  margin: 0px;
+  margin: 10px 0px 0px 0px;
 }
 
 .position-heading,
+.position-spec,
 .position-spec-group,
 .position-view {
   display: flex;
 }
 
 .material-symbols-outlined {
-  background-color: #fdf3fb;
   align-content: center;
   color: var(--color-grey-primary);
   font-size: 125%;
   font-weight: 350;
 }
 
-#google-location,
+#google-location {
+  margin-right: 5px;
+}
+
 #google-contract {
-  margin: 0px 5px 0px 0px;
-}
-
-#google-arrow-top-right {
-  margin: 0px 0px 0px 5px;
-}
-
-.position-spec {
-  margin: 10px 0px;
-  background-color: #e946f4;
-}
-
-.position-view {
-  background-color: #ec9d36;
+  margin: 0px 5px 0px 10px;
 }
 
 .position-spec-title,
 .position-view-title {
-  background-color: rgb(64, 238, 232);
-  font-size: 18px;
   color: var(--color-grey-primary);
+  font-size: 18px;
   font-weight: normal;
 }
 
@@ -329,9 +317,28 @@ header,
   color: #c11673;
 }
 
-/* REDUCE MARGIN REP */
-/* ADD SPACE BETWEEN .section(s) */
-/* font-size: 18px; rv/root */
+.position-view {
+  margin-left: auto;
+}
+
+.position-view-title {
+  color: var(--color-blue-primary);
+}
+
+#google-arrow-top-right {
+  color: var(--color-blue-primary);
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+#google-arrow-top-right:hover {
+  transform: rotate(45deg);
+}
+
+.position-view-title:hover + #google-arrow-top-right {
+  transform: rotate(45deg);
+}
 
 /* --------------------------------- FOOTER --------------------------------- */
 

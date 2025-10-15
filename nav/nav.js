@@ -2,6 +2,10 @@
 
 // --------------------------------- BODY ---------------------------------
 
+// document.addEventListener("DOMContentLoaded", () => {
+//   document.body.classList.add("loaded");
+// });
+
 // ----------- CAROUSEL -----------
 
 // Retrieved the DOM element representing the carousel track container.

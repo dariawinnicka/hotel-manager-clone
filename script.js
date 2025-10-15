@@ -2,6 +2,10 @@
 
 // --------------------------------- BODY ---------------------------------
 
+// document.addEventListener("DOMContentLoaded", () => {
+//   document.body.classList.add("loaded");
+// });
+
 // ----------- ANIMATION -----------
 
 // Retrieved the DOM element representing the images.
