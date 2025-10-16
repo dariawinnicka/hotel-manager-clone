@@ -112,20 +112,25 @@ nav {
 
 /* terms.html --------------------------------- BODY --------------------------------- */
 
-.terms-header {
+.terms-header,
+.privacy-header {
   margin: 80px auto 0px auto;
 }
 
-.terms-date {
+.terms-date,
+.privacy-date {
   margin: 0px auto 30px auto;
 }
 
 .terms-date,
-.terms-paragraph {
+.terms-paragraph,
+.privacy-date,
+.privacy-paragraph {
   font-size: 14px;
 }
 
-.terms-title {
+.terms-title,
+.privacy-title {
   font-weight: 550;
 }
 
