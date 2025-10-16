@@ -112,6 +112,23 @@ nav {
 
 /* terms.html --------------------------------- BODY --------------------------------- */
 
+.terms-header {
+  margin: 80px auto 0px auto;
+}
+
+.terms-date {
+  margin: 0px auto 30px auto;
+}
+
+.terms-date,
+.terms-paragraph {
+  font-size: 14px;
+}
+
+.terms-title {
+  font-weight: 550;
+}
+
 /* --------------------------------- FOOTER --------------------------------- */
 
 footer {
