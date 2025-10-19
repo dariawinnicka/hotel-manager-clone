@@ -48,7 +48,7 @@ nav {
 }
 
 .nav-logo a {
-  color: var(--color-black);
+  color: var(--color-blue-primary);
   font-size: 21px;
   font-weight: 550;
   letter-spacing: 0.5px;

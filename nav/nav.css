@@ -48,7 +48,7 @@ nav {
 }
 
 .nav-logo a {
-  color: var(--color-black);
+  color: var(--color-blue-primary);
   font-size: 21px;
   font-weight: 550;
   letter-spacing: 0.5px;
@@ -338,6 +338,75 @@ body.loaded {
 
 .position-view-title:hover + #google-arrow-top-right {
   transform: rotate(45deg);
+}
+
+/* app.html --------------------------------- BODY --------------------------------- */
+
+.sign-in-group,
+.sign-in-sub-group,
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+
+.sign-in-logo {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 975px;
+  margin: auto 0;
+  opacity: 0.5;
+}
+
+.company-logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 55px;
+  margin: auto 0;
+}
+
+.company-title {
+  color: var(--color-blue-primary);
+  font-size: 21px;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+input {
+  padding: 12px 12px;
+}
+
+.btn-sign-in {
+  background-color: var(--color-blue-primary);
+  border-radius: 14px;
+  color: var(--color-blue-secondary);
+  padding: 12px 12px;
+  text-decoration: none;
+  margin-top: 21px;
+}
+
+.btn-sign-in:hover {
+  background-color: var(--color-blue-secondary);
+  border-radius: 14px;
+  color: var(--color-blue-primary);
+  padding: 12px 21px;
+  text-decoration: none;
+}
+
+.sign-in-no-account {
+  color: var(--color-blue-primary);
+  text-decoration: none;
 }
 
 /* --------------------------------- FOOTER --------------------------------- */
