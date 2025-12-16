@@ -134,6 +134,11 @@ nav {
   font-weight: 550;
 }
 
+a {
+  color: var(--color-blue-primary);
+  text-decoration: none;
+}
+
 /* --------------------------------- FOOTER --------------------------------- */
 
 footer {

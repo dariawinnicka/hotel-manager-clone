@@ -6,7 +6,7 @@
   --color-white: #ffffff; /* background / btn */
   --color-black: #000000; /* text / btn */
   --color-grey-primary: #6d7787; /* text / icon */
-  --color-grey-secondary: #f9fafb; /* hover / line / cookie */
+  --color-grey-secondary: #f9fafb; /* hover / line / cookie / NEW: form */
   --color-grey-tertiary: #363c40; /* coookie */
   --color-blue-primary: #1c73e8; /* text / btn */
   --color-blue-secondary: #eef4fe; /* hover */
@@ -45,6 +45,7 @@ nav {
 
 .nav-logo img {
   height: 40px;
+  width: 40px;
 }
 
 .nav-logo a {
@@ -151,7 +152,8 @@ body.loaded {
   filter: blur(0);
 } */
 
-.section-1 {
+.section-1,
+#section-2 {
   display: flex;
 }
 
@@ -228,6 +230,8 @@ body.loaded {
   gap: 21px;
   margin-top: 50px;
   text-align: center;
+
+  justify-content: center;
 }
 
 #google-check-circle {
@@ -342,141 +346,155 @@ body.loaded {
 
 /* app.html --------------------------------- BODY --------------------------------- */
 
-/* ongoing */
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Inter", sans-serif;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-}
-
 .sign-in-group {
   display: flex;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .sign-in-sub-group {
-  width: 30%;
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 70px;
-  box-sizing: border-box;
-  z-index: 2;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  width: 325px;
 }
 
 .sign-in-logo {
-  display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .company-logo {
-  width: 38px;
   height: 38px;
   margin-right: 8px;
-  position: static !important;
+  width: 38px;
 }
 
 .company-title {
   color: var(--color-blue-primary);
   font-size: 21px;
-  font-weight: 600;
-  text-decoration: none;
+  font-weight: 550;
 }
 
 .sign-in-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 input {
-  width: 100%;
-  padding: 12px 14px;
-  border: 1px solid #dcdcdc;
-  border-radius: 7px;
+  border: 1px solid var(--color-grey-primary);
+  border-radius: 14px;
   font-size: 14px;
+  padding: 12px 14px;
 }
 
 .btn-sign-in {
-  text-align: center;
   background-color: var(--color-blue-primary);
-  color: white;
-  font-weight: 500;
-  padding: 12px 0;
-  border-radius: 7px;
-  text-decoration: none;
-  transition: all 0.2s ease;
+  border-radius: 14px;
+  color: var(--color-white);
+  font-size: 14px;
+  padding: 12px;
+  text-align: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .btn-sign-in:hover {
-  background-color: #0066ff;
+  background-color: var(--color-blue-secondary);
+  color: var(--color-blue-primary);
 }
 
 p {
-  font-size: 13.5px;
-  color: #333;
+  font-size: 13px;
   margin-top: 8px;
 }
 
 .sign-in-no-account {
   color: var(--color-blue-primary);
+}
+
+/* demo.html --------------------------------- BODY --------------------------------- */
+
+#section-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+#header {
+  display: block;
+  margin-top: 0px;
+}
+
+#stat {
+  display: flex;
+  margin-top: 75px;
+}
+
+.stat-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.stat-description {
+  color: var(--color-grey-primary);
+  font-size: 18px;
+  margin: -20px 0px;
+}
+
+.stat-2 {
+  margin: 0px 50px;
+}
+
+.form {
+  border-color: var(--color-grey-secondary);
+  border-style: solid;
+  border-radius: 10px;
+}
+
+form {
+  margin: 30px;
+}
+
+#text-short {
+  padding-right: 75px;
+}
+
+#text-long {
+  padding-right: 315px;
+}
+
+.text-middle {
+  margin-top: 30px;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--color-blue-primary);
+}
+
+.checkbox-wrap {
+  font-size: 13px;
+}
+
+#checkbox-wrap-2 {
+  margin-top: 10px;
+}
+
+#btn-submit {
+  display: inline-block;
+  margin: 30px 0px 5px 0px;
+  padding: 12px 95px;
+}
+
+a {
+  color: var(--color-blue-primary);
   text-decoration: none;
 }
 
-.sign-in-group img.img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 70%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  z-index: 1;
-  margin: 0;
-  padding: 0;
-  opacity: 1;
-  filter: brightness(0.98);
-  transition: all 0.3s ease;
-}
-
-@media (max-width: 900px) {
-  body {
-    overflow: auto;
-  }
-
-  .sign-in-group {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .sign-in-sub-group {
-    width: 100%;
-    height: auto;
-    padding: 40px;
-    box-shadow: none;
-  }
-
-  .sign-in-group img.img {
-    position: relative;
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    object-position: center;
-    z-index: 0;
-    filter: brightness(1);
-  }
+#section-2 {
+  margin-top: 140px;
 }
 
 /* --------------------------------- FOOTER --------------------------------- */

@@ -20,14 +20,6 @@
     <link
       href="https://unpkg.com/css.gg@2.0.0/icons/css/key.css"
       rel="stylesheet" />
-    <!-- icon-bolt https://fonts.google.com/ -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <!-- rvw -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- preconnect https://fonts.google.com/specimen/DM+Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,14 +33,14 @@
   </head>
 
   <!-- --------------------------------- NAVIGATION --------------------------------- -->
-
   <nav>
     <div class="nav-logo">
-      <!-- --------------------------------- UTILISE <a></a> URL LOGO = FIX CSS AFTER --------------------------------- -->
-      <img
-        class="nav-company-logo"
-        src="../img/65292600bddf8430fb98972d_Hotel_Manager_Logomark.png"
-        alt="image" />
+      <a href="../index.html">
+        <img
+          class="nav-company-logo"
+          src="../img/65292600bddf8430fb98972d_Hotel_Manager_Logomark.png"
+          alt="image" />
+      </a>
       <a href="../index.html" class="nav-company-title">Hotel Manager</a>
     </div>
 
@@ -70,22 +62,93 @@
     </div>
   </nav>
 
+  <!-- --------------------------------- BODY --------------------------------- -->
   <body>
-    <!-- --------------------------------- HEADER --------------------------------- -->
+    <div id="section-1">
+      <!-- SECTION 1 -->
+      <div class="header" id="header">
+        <div class="header-text">
+          <h1 class="header-title" id="header-title">Book a demo</h1>
+          <p class="header-description">
+            In your personalised demo, we'll show you how to cut down<br />
+            queues, grow F&B revenue, unblock your staff and give your<br />
+            guests the perfect guest journey.
+          </p>
+        </div>
+        <div id="stat">
+          <div class="stat-1">
+            <p class="stat-title">22%</p>
+            <p class="stat-description">More spend per guest</p>
+          </div>
+          <div class="stat-2">
+            <p class="stat-title">2-6x</p>
+            <p class="stat-description">Increased F&B orders</p>
+          </div>
+          <div class="stat-3">
+            <p class="stat-title">30%</p>
+            <p class="stat-description">Uplift in upselling</p>
+          </div>
+        </div>
+      </div>
 
-    <!-- N/A -->
+      <!-- FORM -->
+      <div class="form">
+        <form>
+          <input type="text" id="text-short" placeholder="First Name" />
+          <input type="text" id="text-short" placeholder="Last Name" /><br />
+          <input
+            type="text"
+            class="text-middle"
+            id="text-long"
+            placeholder="Company Name" /><br />
+          <input
+            type="text"
+            class="text-middle"
+            id="text-long"
+            placeholder="Company Email" /><br />
+          <input
+            type="text"
+            class="text-middle"
+            id="text-short"
+            placeholder="Job Title" />
+          <input type="text" id="text-short" placeholder="Property Size" />
+          <br />
+          <div class="checkbox-wrap" id="checkbox-wrap-1">
+            <input type="checkbox" class="text-middle" /> I agree to recieve
+            communications from Hotel manager<br />
+          </div>
+          <div class="checkbox-wrap" id="checkbox-wrap-2">
+            <input type="checkbox" /> I accept the
+            <a href="terms.html">Terms & Conditions</a> and
+            <a href="privacy.html">Privacy Policy</a><br />
+            <a href="#" class="btn-sign-in" id="btn-submit">Submit</a>
+          </div>
+        </form>
+      </div>
+    </div>
 
-    <!-- --------------------------------- BODY --------------------------------- -->
-
-    <!-- ACTION -->
-    <!-- https://hotelmanager.co/demo -->
+    <!-- SECTION 2 -->
+    <div id="section-2">
+      <h1 class="title">Why Leading Hotels Choose Hotel Manager</h1>
+      <div class="description">
+        <p>
+          Hotel Manager gives your guests freedom and your team focus. From
+          pre-arrival to post-departure, every interaction becomes seamless,
+          every request manageable, and every opportunity to increase revenue is
+          captured.
+        </p>
+        <p class="description-middle-paragraph">
+          We're not just a guest app - we're the new operating system for modern
+          luxury hospitality.
+        </p>
+      </div>
+    </div>
 
     <!-- connect-javascript -->
     <script src="nav.js"></script>
   </body>
 
   <!-- --------------------------------- FOOTER --------------------------------- -->
-
   <footer>
     <div class="footer-heading">
       <p class="footer-title">We hope you're <br />enjoying your stay.</p>
@@ -94,9 +157,6 @@
 
     <div>
       <a href="../index.html" class="nav-footer" id="btn-home">Home</a>
-      <a href="../footer/partner.html" class="nav-footer" id="btn-programme"
-        >Partner Programme</a
-      >
       <a href="company.html" class="nav-footer" id="btn-company">Company</a>
       <a href="company.html#section-4" class="nav-footer" id="btn-careers"
         >Careers</a
@@ -111,7 +171,7 @@
         Group Limited (No. 12453650)
       </p>
       <a href="../footer/privacy.html" class="nav-sub-footer" id="btn-privacy"
-        >Privacy</a
+        >Privacy Policy</a
       >
       <a href="../footer/terms.html" class="nav-sub-footer" id="btn-terms"
         >Terms & Conditions</a
